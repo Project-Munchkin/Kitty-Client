@@ -5,7 +5,7 @@ class Muchfit extends React.Component {
         let sText = 'Muchfit';
 
         return (
-            <div>{sText}</div>
+            <h1>{sText}</h1>
         );
     }
 }

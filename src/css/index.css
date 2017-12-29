@@ -18,3 +18,7 @@ body, button, input, select, table, textarea, pre {
     outline: none !important;
     color: #000;
 }
+
+h1 {
+    color: blue;
+}
