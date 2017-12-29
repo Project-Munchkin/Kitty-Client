@@ -1,28 +1,57 @@
-module.exports = {
-    entry: './src/index.js',
+const webpack = require("webpack");
+const path = require("path");
 
-    output: {
-        path: __dirname + '/public/',
-        filename: 'bundle.js'
+module.exports = {
+    entry: {
+        'bundle': path.resolve(__dirname, './src/js')
     },
 
-    devServer: {
-        inline: true,
-        port: 7777,
-        contentBase: __dirname + '/public/'
+    output: {
+        filename: '[name].js',
+        path: path.resolve(__dirname, '../dist/js')
     },
 
     module: {
-        loaders: [
+        rules: [
             {
-                test: /\.js$/,
-                loader: 'babel-loader',
+                test: /\.jsx?$/,
                 exclude: /node_modules/,
-                query: {
-                    cacheDirectory: true,
-                    presets: ['env', 'react']
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['env', 'react']
+                    }
                 }
             }
-        ]
-    }
+        ],
+    },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.DefinePlugin({
+            'process.env': {
+                NODE_ENV: JSON.stringify(process.env.NODE_ENV) || '"production"'
+            }
+        })
+    ],
+    devServer: {
+        hot: true,
+        inline: true,
+        host: 'localhost',
+        disableHostCheck: true,
+        port: 3000,
+        open: false,
+        contentBase: "src",
+        publicPath: "/js",
+        watchOptions: {
+            aggregateTimeout: 300,
+            poll: 1000
+        },
+        // proxy: {
+        //     "/user": {
+        //         target: "tbd",
+        //         changeOrigin: true
+        //     }
+        // }
+    },
+    devtool : 'inline-source-map'
 };
