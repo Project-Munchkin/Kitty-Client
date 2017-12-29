@@ -1,0 +1,20 @@
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    -webkit-text-size-adjust: none;
+}
+
+body, button, input, select, table, textarea, pre {
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    appearance: none;
+    /*-webkit-appearance: none;*/
+    -webkit-tap-highlight-color: transparent;
+    -webkit-focus-ring-color: transparent;
+    -webkit-text-size-adjust: none;
+    outline: none !important;
+    color: #000;
+}
