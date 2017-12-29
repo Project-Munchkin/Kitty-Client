@@ -1,8 +1,8 @@
 import React from 'react';
 
-class Mushfit extends React.Component {
+class Muchfit extends React.Component {
     render() {
-        let sText = 'Mushfit';
+        let sText = 'Muchfit';
 
         return (
             <div>{sText}</div>
@@ -10,4 +10,4 @@ class Mushfit extends React.Component {
     }
 }
 
-export default Mushfit;
+export default Muchfit;
