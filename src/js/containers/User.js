@@ -1,17 +1,17 @@
 import React, {Component} from 'react'
-
-import { connect, bindActionCreators } from 'react-redux'
+import {withRouter} from 'react-router-dom'
+import {connect} from 'react-redux'
 import * as actions from '../store/actions/index'
 
 class User extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
     }
 
     render() {
         return (
-            <div>user</div>
+            <div>{this.props.gender}</div>
         );
     }
 }
@@ -19,7 +19,7 @@ class User extends Component {
 const mapStateToProps = (state) => {
     return {
         gender: state.user.gender,
-        bodyType : state.user.bodyType,
+        bodyType: state.user.bodyType,
         height: state.user.height
     };
 };
@@ -27,10 +27,16 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     // 방법 1
     return {
-        handleToggleGender : () => { dispatch(actions.toggleGender())},
-        handleSetBodyType : (bodyType) => { dispatch(actions.setBodyType(bodyType))},
-        handleSetHeight : (height) => { dispatch(actions.setHeight(height))}
+        handleToggleGender: () => {
+            dispatch(actions.toggleGender())
+        },
+        handleSetBodyType: (bodyType) => {
+            dispatch(actions.setBodyType(bodyType))
+        },
+        handleSetHeight: (height) => {
+            dispatch(actions.setHeight(height))
+        }
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(User);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(User));

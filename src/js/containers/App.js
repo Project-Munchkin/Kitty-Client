@@ -14,8 +14,9 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Route exact path="/" component={Select}/>
-                {/*<Route path="/select" component={Select}/>*/}
+                <Route exact path="/" component={User}/>
+                <Route path="/user" component={User}/>
+                <Route path="/select" component={Select}/>
                 <Route path="/result" component={Result}/>
             </div>
         );
