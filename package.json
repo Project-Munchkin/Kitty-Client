@@ -1,18 +1,18 @@
 {
-  "name": "kitty-client-prototype",
+  "name": "kitty-client",
   "version": "1.0.0",
-  "description": "prototyping",
+  "description": "TBD",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Project-Munchkin/Kitty-Client-Prototype.git"
+    "url": "git+https://github.com/Project-Munchkin/Kitty-Client.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Project-Munchkin/Kitty-Client-Prototype/issues"
+    "url": "https://github.com/Project-Munchkin/Kitty-Client/issues"
   },
-  "homepage": "https://github.com/Project-Munchkin/Kitty-Client-Prototype#readme",
+  "homepage": "https://github.com/Project-Munchkin/Kitty-Client#readme",
   "dependencies": {
     "axios": "^0.17.1",
     "react": "^16.2.0",
