@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 
 import { connect, bindActionCreators } from 'react-redux'
-import * as actions from '../../store/actions'
+import * as actions from '../store/actions/index'
 
-class Insert extends Component {
+class User extends Component {
 
     constructor(props){
         super(props);
@@ -11,7 +11,7 @@ class Insert extends Component {
 
     render() {
         return (
-            <div></div>
+            <div>user</div>
         );
     }
 }
@@ -33,4 +33,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Insert);
+export default connect(mapStateToProps, mapDispatchToProps)(User);

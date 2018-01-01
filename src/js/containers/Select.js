@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-class Result extends Component {
+class Select extends Component {
 
     constructor(props){
         super(props);
@@ -8,9 +8,11 @@ class Result extends Component {
 
     render() {
         return (
-            <div></div>
+            <div>
+                <h1>select</h1>
+            </div>
         );
     }
 }
 
-export default Result;
+export default Select;

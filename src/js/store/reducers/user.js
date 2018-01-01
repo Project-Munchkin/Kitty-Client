@@ -16,6 +16,8 @@ export default function user(state = initialState, action) {
         case ACTION_TYPES.SET_BODY_TYPE:
             return {...state, bodyType: action.bodyType};
         case ACTION_TYPES.SET_BODY_HEIGHT:
-            return {...state, height: action.height}
+            return {...state, height: action.height};
+        default:
+            return state;
     }
 }

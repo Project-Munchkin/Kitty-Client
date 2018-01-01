@@ -1,9 +1,6 @@
 import React, {Component} from 'react'
 
-import Insert from './insert'
-import Result from './result'
-
-class App extends Component {
+class Result extends Component {
 
     constructor(props){
         super(props);
@@ -11,9 +8,11 @@ class App extends Component {
 
     render() {
         return (
-            <Insert/>
+            <div>
+                <h1>result</h1>
+            </div>
         );
     }
 }
 
-export default App;
+export default Result;
