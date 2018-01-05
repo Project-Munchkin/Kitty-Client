@@ -3,6 +3,8 @@ import {withRouter} from 'react-router-dom'
 import {connect} from 'react-redux'
 import * as actions from '../store/actions/index'
 
+import Header from '../components/header'
+
 class User extends Component {
 
     constructor(props) {
@@ -11,7 +13,9 @@ class User extends Component {
 
     render() {
         return (
-            <div>{this.props.gender}</div>
+            <div>
+                <Header/>
+            </div>
         );
     }
 }

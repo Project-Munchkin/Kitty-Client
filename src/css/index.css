@@ -22,3 +22,18 @@ body, button, input, select, table, textarea, pre {
 h1 {
     color: blue;
 }
+
+/* Header */
+.header-box{
+    text-align: center;
+    font-size: 16pt;
+    letter-spacing: 0.1pt;
+}
+
+.header-title{
+
+}
+
+.header-title-acent{
+    color: #ae003c
+}
