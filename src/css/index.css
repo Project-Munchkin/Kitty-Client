@@ -24,16 +24,49 @@ h1 {
 }
 
 /* Header */
-.header-box{
+.header-box {
     text-align: center;
-    font-size: 16pt;
-    letter-spacing: 0.1pt;
+    font-size: 32px;
+    letter-spacing: 0.1px;
+    margin-top: 42px;
+    margin-bottom: 38px;
 }
 
-.header-title{
+.header-title {
 
 }
 
-.header-title-acent{
+.header-title-acent {
     color: #ae003c
+}
+
+.content {
+    width: 300px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+.content-explain {
+    font-size: 24px;
+    text-align: left;
+}
+
+.select-box {
+    font-size: 24px;
+}
+
+.select-box.user{
+    margin-top: 76px;
+}
+
+.selector {
+    margin-bottom: 42px;
+}
+
+.selector:last-child {
+    margin-bottom: 0;
+}
+
+.selector-label {
+    margin-right: 54px;
 }
