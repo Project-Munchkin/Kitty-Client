@@ -1,0 +1,82 @@
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    -webkit-text-size-adjust: none;
+    font-family: 'Noto Sans';
+    font-size: 12pt;
+}
+
+body, button, input, select, table, textarea, pre {
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    appearance: none;
+    /*-webkit-appearance: none;*/
+    -webkit-tap-highlight-color: transparent;
+    -webkit-focus-ring-color: transparent;
+    -webkit-text-size-adjust: none;
+    outline: none !important;
+    color: #000;
+}
+
+h1 {
+    color: blue;
+}
+
+
+@media all and (max-width: 320px) {
+    .container {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+
+@media all and (min-width: 321px) and (max-width: 768px) {
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+}
+@media all and (min-width: 769px) {
+    .container {
+        min-width: 768px;
+        margin: 0 auto;
+    }
+}
+
+.user-title {
+}
+
+.user-label {
+    display: inline-block;
+    width: 22.5pt;
+    height: 18pt;
+    line-height: 18pt;
+    text-align: right;
+    margin-right: 27pt;
+}
+
+.user-btn {
+    margin-right: 11pt;
+    font-weight: 500;
+    color: rgb(148, 148, 148);
+}
+
+.user-btn-active {
+    color: rgb(174, 0, 60);
+}
+
+.user-select {
+    margin-bottom: 21pt;
+}
+
+.user-next {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 24pt;
+    color: rgb(148, 148, 148);
+    font-size: 16pt;
+}
+

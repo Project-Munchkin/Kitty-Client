@@ -13,6 +13,21 @@ export default {
             NORMAL: 'normal',
             SLIM: 'slim',
             CHUBBY: 'chubby'
+        },
+        SHOULDER: {
+            NORMAL: 'normal',
+            NARROW: 'narrow',
+            WIDE: 'wide'
+        },
+        ARM: {
+            NORMAL: 'normal',
+            SHORT: 'short',
+            LONG: 'long'
+        },
+        LEG: {
+            NORMAL: 'normal',
+            SHORT: 'short',
+            LONG: 'long'
         }
     }
 }

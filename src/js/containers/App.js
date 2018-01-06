@@ -13,7 +13,7 @@ class App extends Component {
 
     render() {
         return (
-            <div>
+            <div className={'container'}>
                 <Route exact path="/" component={User}/>
                 <Route path="/user" component={User}/>
                 <Route path="/select" component={Select}/>
