@@ -41,7 +41,7 @@ h1 {
 }
 
 .content {
-    width: 300px;
+    width: 280px;
     margin: 0 auto;
     font-weight: 300;
 }
@@ -56,7 +56,7 @@ h1 {
 }
 
 .select-box.user{
-    margin-top: 76px;
+    margin: 76px 0 91px;
 }
 
 .selector {
@@ -67,6 +67,38 @@ h1 {
     margin-bottom: 0;
 }
 
-.selector-label {
-    margin-right: 54px;
+.selector .label {
+    display: inline-block;
+    width: 45px;
+    text-align: right;
+}
+
+.selector .options {
+    display: inline-block;
+    margin-left: 54px;
+}
+
+.selector .options ul {
+    list-style-type: none;
+}
+.selector .options ul li {
+    display: inline;
+    color: gray;
+    margin-left: 22px;
+}
+
+.selector .options ul li:first-child{
+    margin-left: 0;
+}
+
+.selector .options ul li.active{
+    display: inline;
+    color: #ae003c;
+}
+
+.button-next {
+    text-align: center;
+    color: #949494;
+    font-size: 32px;
+    font-weight: 100;
 }

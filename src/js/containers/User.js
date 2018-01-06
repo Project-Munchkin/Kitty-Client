@@ -23,28 +23,31 @@ class User extends Component {
                     </div>
                     <div className="select-box user">
                         <div className="selector toggle">
-                            <span className="selector-label">성별</span>
-                            <div>남</div>
+                            <span className="label">성별</span>
+                            <div className="options">남</div>
                         </div>
                         <div className="selector click">
-                            <span className="selector-label">체형</span>
-                            <div className="selector-">
-                                <span>통통</span>
-                                <span>보통</span>
-                                <span>마름</span>
+                            <span className="label">체형</span>
+                            <div className="options">
+                                <ul>
+                                    {  /* [D] 선택된 것은 active 클래스 */}
+                                    <li className="active">통통</li>
+                                    <li>보통</li>
+                                    <li>마름</li>
+                                </ul>
                             </div>
                         </div>
-                        <div className="selector option">
-                            <span className="selector-label">키</span>
-                            <div>
+                        <div className="selector scroll">
+                            <span className="label">키</span>
+                            <div className="options">
                                 <option>
                                     170cm
                                 </option>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <span>다음으로 >></span>
+                    <div className="button-next">
+                        <a>다음으로 >></a>
                     </div>
                 </div>
             </div>
