@@ -19,30 +19,6 @@ body, button, input, select, table, textarea, pre {
     color: #000;
 }
 
-@font-face {
-    font-family: NotoSansCJKkr-Light;
-    src: url("../font/NotoSansCJKkr-Light.otf") format('truetype');
-}
-
-@font-face {
-    font-family: NotoSansCJKkr-Medium;
-    src: url("../font/NotoSansCJKkr-Medium.otf") format('truetype');
-}
-
-
-@font-face {
-    font-family: NotoSansCJKkr-Regular;
-    src: url("../font/NotoSansCJKkr-Regular.otf") format('truetype');
-}
-
-@font-face {
-    font-family: NotoSansCJKkr-Thin;
-    src: url("../font/NotoSansCJKkr-Thin.otf") format('truetype');
-}
-
-
-
-
 /* Header */
 .header-box {
     text-align: center;
@@ -60,7 +36,6 @@ body, button, input, select, table, textarea, pre {
 .content {
     width: 280px;
     margin: 0 auto;
-    font-family: NotoSansCJKkr-Light;
 }
 
 .content-explain {
@@ -74,7 +49,7 @@ body, button, input, select, table, textarea, pre {
     font-size: 24px;
 }
 
-.select-box.user{
+.select-box.user {
     margin: 76px 0 91px;
 }
 
@@ -99,21 +74,21 @@ body, button, input, select, table, textarea, pre {
 
 .selector .options ul {
     list-style-type: none;
-    font-family: NotoSansCJKkr-Medium;
     color: gray;
     font-weight: 500;
 }
+
 .selector .options ul li {
     display: inline;
     margin-left: 22px;
     opacity: 0.25;
 }
 
-.selector .options ul li:first-child{
+.selector .options ul li:first-child {
     margin-left: 0;
 }
 
-.selector .options ul li.active{
+.selector .options ul li.active {
     display: inline;
     color: #ae003c;
     opacity: 1.0;
@@ -124,5 +99,4 @@ body, button, input, select, table, textarea, pre {
     color: #949494;
     font-size: 32px;
     font-weight: 100;
-    font-family: NotoSansCJKkr-Thin;
 }
