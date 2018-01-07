@@ -1,0 +1,50 @@
+/*결과 css */
+.result {
+    display: inline-block;
+    margin: 66px 0 0;
+}
+
+.result ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.result ul li {
+    float: left;
+    display: inline;
+}
+
+.result ul li:nth-child(odd) {
+    margin-right: 38px;
+}
+
+.result ul li div.img-wrapper {
+    width: 104px;
+    height: 104px;
+    border-radius: 17px;
+    margin-bottom: 15px;
+}
+
+.result ul li div.img-wrapper img {
+    width: 104px;
+}
+
+.result ul li span.label {
+    display: inline-block;
+    width: 104px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+}
+
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
