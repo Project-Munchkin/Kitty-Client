@@ -12,8 +12,8 @@ class Clothes extends Component {
         return (
             <div>
                 <Header/>
-                <div className="content clothes-content">
-                    <div className="content-explain clothes-content-explain">
+                <div className="clothes-content">
+                    <div className="clothes-content-explain">
                         <span>
                             어떤 옷을 찾으세요?
                         </span>
@@ -22,39 +22,39 @@ class Clothes extends Component {
                         <ul>
                             <li>
                                 <div className="img-wrapper">
-                                    <img src="../../img/clothes/champion.jpg"/>
+                                    <img src="../../img/clothes/1.jpg"/>
                                 </div>
                                 <span className="label">상의</span>
                             </li>
                             <li>
                                 <div className="img-wrapper">
-                                    <img src="../../img/clothes/champion.jpg"/>
+                                    <img src="../../img/clothes/2.jpg"/>
+                                </div>
+                                <span className="label">슬랙스</span>
+                            </li>
+                            <li>
+                                <div className="img-wrapper">
+                                    <img src="../../img/clothes/3.jpg"/>
+                                </div>
+                                <span className="label">코트</span>
+                            </li>
+                            <li>
+                                <div className="img-wrapper">
+                                    <img src="../../img/clothes/4.jpg"/>
                                 </div>
                                 <span className="label">상의</span>
                             </li>
                             <li>
                                 <div className="img-wrapper">
-                                    <img src="../../img/clothes/champion.jpg"/>
+                                    <img src="../../img/clothes/5.jpg"/>
                                 </div>
-                                <span className="label">상의</span>
+                                <span className="label">하의</span>
                             </li>
                             <li>
                                 <div className="img-wrapper">
-                                    <img src="../../img/clothes/champion.jpg"/>
+                                    <img src="../../img/clothes/6.jpg"/>
                                 </div>
-                                <span className="label">상의</span>
-                            </li>
-                            <li>
-                                <div className="img-wrapper">
-                                    <img src="../../img/clothes/champion.jpg"/>
-                                </div>
-                                <span className="label">상의</span>
-                            </li>
-                            <li>
-                                <div className="img-wrapper">
-                                    <img src="../../img/clothes/champion.jpg"/>
-                                </div>
-                                <span className="label">상의</span>
+                                <span className="label">외투</span>
                             </li>
                         </ul>
                     </div>

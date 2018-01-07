@@ -1,7 +1,12 @@
 /*결과 css */
+.result-content {
+    width: 288px;
+    margin: 0 auto;
+}
+
 .result {
     display: inline-block;
-    margin: 66px 0 0;
+    margin: 66px 19px 0;
 }
 
 .result ul {

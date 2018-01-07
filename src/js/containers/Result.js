@@ -12,7 +12,7 @@ class Result extends Component {
         return (
             <div>
                 <Header/>
-                <div className="content">
+                <div className="result-content">
                     <div className="content-explain">
                         <span>
                             어떤 브랜드를 둘러보실래요?
@@ -22,7 +22,7 @@ class Result extends Component {
                         <ul>
                             <li>
                                 <div className="img-wrapper">
-                                    <img src="../../img/brand/uniqlo.gif"/>
+                                    <img src="../../img/brand/uniqlo.png"/>
                                 </div>
                                 <span className="label">유니클로</span>
                             </li>
@@ -34,7 +34,7 @@ class Result extends Component {
                             </li>
                             <li>
                                 <div className="img-wrapper">
-                                    <img src="../../img/brand/zara.png"/>
+                                    <img src="../../img/brand/zara.jpg"/>
                                 </div>
                                 <span className="label">자라</span>
                             </li>

@@ -1,10 +1,15 @@
 /*결과 css */
 .clothes-content {
     width: 315px;
+    margin: 0 auto;
 }
 
 .clothes-content-explain {
-    margin-left: 17.5px;
+    margin-left: 16px;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.1px;
+    text-align: left;
 }
 
 .clothes {
