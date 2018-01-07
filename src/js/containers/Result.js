@@ -22,25 +22,25 @@ class Result extends Component {
                         <ul>
                             <li>
                                 <div className="img-wrapper">
-                                    <img src="../../img/uniqlo.gif"/>
+                                    <img src="../../img/brand/uniqlo.gif"/>
                                 </div>
                                 <span className="label">유니클로</span>
                             </li>
                             <li>
                                 <div className="img-wrapper">
-                                    <img src="../../img/giordano.png"/>
+                                    <img src="../../img/brand/giordano.png"/>
                                 </div>
                                 <span className="label">지오다노</span>
                             </li>
                             <li>
                                 <div className="img-wrapper">
-                                    <img src="../../img/zara.png"/>
+                                    <img src="../../img/brand/zara.png"/>
                                 </div>
                                 <span className="label">자라</span>
                             </li>
                             <li>
                                 <div className="img-wrapper">
-                                    <img src="../../img/hm.png"/>
+                                    <img src="../../img/brand/hm.png"/>
                                 </div>
                                 <span className="label">H&M</span>
                             </li>

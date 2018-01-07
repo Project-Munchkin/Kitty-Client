@@ -36,15 +36,3 @@
     font-size: 16px;
     letter-spacing: 0.1px;
 }
-
-.img-wrapper {
-    position: relative;
-    overflow: hidden;
-}
-
-.img-wrapper img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}

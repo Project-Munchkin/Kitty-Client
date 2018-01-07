@@ -100,3 +100,15 @@ body, button, input, select, table, textarea, pre {
     font-size: 32px;
     font-weight: 100;
 }
+
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}

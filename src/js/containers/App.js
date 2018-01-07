@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom'
 import User from './User'
 import Select from './Select'
 import Result from './Result'
+import Clothes from "./Clothes";
 
 class App extends Component {
 
@@ -18,6 +19,7 @@ class App extends Component {
                 <Route path="/user" component={User}/>
                 <Route path="/select" component={Select}/>
                 <Route path="/result" component={Result}/>
+                <Route path="/clothes" component={Clothes}/>
             </div>
         );
     }
