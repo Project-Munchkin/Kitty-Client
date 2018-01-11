@@ -5,6 +5,8 @@ import User from './User'
 import Select from './Select'
 import Result from './Result'
 import Clothes from "./Clothes";
+import RecommendedClothes from "./RecommendedClothes";
+import RecommendedClothesDetail from "./RecommendedClothesDetail";
 
 class App extends Component {
 
@@ -20,6 +22,8 @@ class App extends Component {
                 <Route path="/select" component={Select}/>
                 <Route path="/result" component={Result}/>
                 <Route path="/clothes" component={Clothes}/>
+                <Route path="/recommended-clothes" component={RecommendedClothes}/>
+                <Route path="/recommended-clothes-detail" component={RecommendedClothesDetail}/>
             </div>
         );
     }

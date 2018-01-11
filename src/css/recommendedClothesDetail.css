@@ -1,0 +1,44 @@
+.recommended-clothes ul li div.opacity {
+    opacity: 0.25;
+}
+
+.clothes-detail {
+    position: absolute;
+    top: 16px;
+    left: -6.5px;
+    width: 320px;
+    height: 320px;
+    opacity: 0.81;
+    border-radius: 36px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: #ae003c;
+    color: #ffffff;
+}
+
+.clothes-detail .detail-head {
+    margin: 23px 43px 0;
+}
+
+.clothes-detail .detail-head span {
+    height: 28px;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    text-align: left;
+}
+
+.clothes-detail .detail-body {
+    margin: 18px 43px 0;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.86;
+    letter-spacing: 0.1px;
+    text-align: left;
+}
+

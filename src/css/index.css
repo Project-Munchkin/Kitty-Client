@@ -3,6 +3,7 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
     padding: 0;
     font-weight: normal;
     -webkit-text-size-adjust: none;
+    font-family: 'NanumSquare', sans-serif;
 }
 
 body, button, input, select, table, textarea, pre {
@@ -104,6 +105,7 @@ body, button, input, select, table, textarea, pre {
 .img-wrapper {
     position: relative;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .img-wrapper img {
