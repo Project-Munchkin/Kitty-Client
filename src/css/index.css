@@ -95,7 +95,7 @@ body, button, input, select, table, textarea, pre {
     opacity: 1.0;
 }
 
-.button-next {
+.button-next, .button-prev {
     text-align: center;
     color: #949494;
     font-size: 32px;

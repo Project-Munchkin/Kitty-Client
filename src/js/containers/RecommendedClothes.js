@@ -54,6 +54,9 @@ class RecommendedClothes extends Component {
                             </li>
                         </ul>
                     </div>
+                    <div className="button-prev">
+                        <a>《돌아가기</a>
+                    </div>
                 </div>
             </div>
         );
