@@ -46,6 +46,7 @@ class User extends Component {
 
     handleClickButtonNext(){
         console.log(this.props.user);
+        this.props.history.push('/brand');
     }
 
     render() {
