@@ -7,6 +7,7 @@ import Header from "../components/header";
 import ToggleSelector from "../components/selector/ToggleSelector";
 import ButtonSelector from "../components/selector/ButtonSelector";
 import ScrollSelector from "../components/selector/ScrollSelector";
+
 class User extends Component {
 
     constructor(props) {
@@ -20,8 +21,11 @@ class User extends Component {
                 <div className={"content user"}>
                     <div className={"select-box user"}>
                         <ToggleSelector/>
-                        <ButtonSelector/>
+                        <ButtonSelector label={'체형'} options={['마름', '보통', '통통']} initIndex={1} selectCallback/>
                         <ScrollSelector/>
+                        <ButtonSelector label={'어깨'} options={['좁다', '보통', '넓다']} initIndex={1}/>
+                        <ButtonSelector label={'팔'} options={['짧다', '보통', '길다']} initIndex={1}/>
+                        <ButtonSelector label={'다리'} options={['짧다', '보통', '길다']} initIndex={1}/>
                     </div>
                     <div className="button-next">
                         <a>다음으로 >></a>
