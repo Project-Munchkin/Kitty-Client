@@ -15,17 +15,23 @@ class User extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            gender: types.USER.GENDER.MAN,
             bodyType: types.USER.BODY_TYPE.NORMAL,
             shoulder: types.USER.SHOULDER.NORMAL,
             arm: types.USER.ARM.NORMAL,
             leg: types.USER.LEG.NORMAL
         };
 
+        this.handleSelectGender = ::this.handleSelectGender;
         this.handleSelectBodyType = ::this.handleSelectBodyType;
         this.handleSelectShoulder = ::this.handleSelectShoulder;
         this.handleSelectArm = ::this.handleSelectArm;
         this.handleSelectLeg = ::this.handleSelectLeg;
         this.handleClickButtonNext = ::this.handleClickButtonNext;
+    }
+
+    handleSelectGender(data) {
+        this.props.handleSelectGender(data.value);
     }
 
     handleSelectBodyType(data) {
@@ -54,7 +60,14 @@ class User extends Component {
                 <Header/>
                 <div className={"content user"}>
                     <div className={"select-box user"}>
-                        <ToggleSelector/>
+                        <ToggleSelector label={'성별'}
+                                        options={[
+                                            {name: '남', value: types.USER.GENDER.MAN},
+                                            {name: '여', value: types.USER.GENDER.WOMAN}
+                                        ]}
+                                        initIndex={0}
+                                        selectCallback={this.handleSelectGender}
+                                        />
                         <ButtonSelector label={'체형'}
                                         options={[
                                             {name: '마름', value: types.USER.BODY_TYPE.SLIM},
