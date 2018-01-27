@@ -19,7 +19,7 @@ class App extends Component {
             <div className={'container'}>
                 <Route exact path="/" component={User}/>
                 <Route path="/user" component={User}/>
-                <Route path="/brand/:type" component={Brand}/>
+                <Route path="/brand" component={Brand}/>
                 <Route path="/clothes/:type" component={Clothes}/>
                 <Route path="/result" component={Result}/>
                 <Route path="/recommended" component={RecommendedClothes}/>
