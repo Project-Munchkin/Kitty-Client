@@ -14,19 +14,19 @@ class ButtonSelector extends Component {
     handleClickOption(e){
         const target = e.target;
         const index = Number(target.getAttribute('data-index'));
-        const name = target.getAttribute('data-index');
+        const value = target.getAttribute('data-value');
 
         this.setState({
             selectedIndex: index
         });
 
-        this.props.selectCallback && this.props.selectCallback({index, name});
+        this.props.selectCallback && this.props.selectCallback({index, value});
     }
 
     render() {
-        const renderOptions = this.props.options.map((name, index)=>{
+        const renderOptions = this.props.options.map((item, index)=>{
             return (<li className={this.state.selectedIndex === index ? 'active' : ''} key={index}
-                        data-index={index} data-name={name} onClick={this.handleClickOption}>{name}</li>);
+                        data-index={index} data-value={item.value} onClick={this.handleClickOption}>{item.name}</li>);
         });
 
         return (

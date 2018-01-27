@@ -8,7 +8,7 @@ const initialState = {
     height: 170,
     shoulder: TYPES.USER.SHOULDER.NORMAL,
     arm: TYPES.USER.ARM.NORMAL,
-    leg: TYPES.USER.LEG.NORMAL,
+    leg: TYPES.USER.LEG.NORMAL
 };
 
 // Reducer는 이전 상태값과 액션을 전달받아서 내보낸다.

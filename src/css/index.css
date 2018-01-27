@@ -38,7 +38,7 @@ body, button, input, select, table, textarea, pre {
     margin: 0 auto;
 }
 
-.content.user{
+.content.user {
     width: 280px;
 }
 
@@ -98,8 +98,15 @@ body, button, input, select, table, textarea, pre {
     opacity: 1.0;
 }
 
-.button-next, .button-prev {
+.button {
+}
+
+.button.bottom {
     text-align: center;
+    margin-bottom: 55px;
+}
+
+.button.bottom button {
     color: #949494;
     font-size: 32px;
     font-weight: 100;
