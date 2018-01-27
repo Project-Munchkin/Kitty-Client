@@ -1,10 +1,10 @@
-import React, {Component} from 'react'
-import { Route } from 'react-router-dom'
+import React, {Component} from "react";
+import { Route } from "react-router-dom";
 
-import User from './User'
-import Select from './Select'
-import Result from './Result'
+import User from "./User";
+import Brand from "./Brand";
 import Clothes from "./Clothes";
+import Result from "./Result";
 import RecommendedClothes from "./RecommendedClothes";
 import RecommendedClothesDetail from "./RecommendedClothesDetail";
 
@@ -19,7 +19,7 @@ class App extends Component {
             <div className={'container'}>
                 <Route exact path="/" component={User}/>
                 <Route path="/user" component={User}/>
-                <Route path="/brand/:type" component={Select}/>
+                <Route path="/brand/:type" component={Brand}/>
                 <Route path="/clothes/:type" component={Clothes}/>
                 <Route path="/result" component={Result}/>
                 <Route path="/recommended" component={RecommendedClothes}/>
