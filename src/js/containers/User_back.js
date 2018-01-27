@@ -3,9 +3,9 @@ import {withRouter} from 'react-router-dom'
 import {connect} from 'react-redux'
 import * as actions from '../store/actions';
 
-import GenderSelect from "../components/GenderSelect";
-import BodyTypeSelect from "../components/BodyTypeSelect";
-import HeightSelect from "../components/HeightSelect";
+import GenderSelect from "../components/selector/GenderSelect";
+import BodyTypeSelect from "../components/selector/BodyTypeSelect";
+import HeightSelect from "../components/selector/HeightSelect";
 
 class User extends Component {
 

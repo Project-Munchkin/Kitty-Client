@@ -19,11 +19,10 @@ class App extends Component {
             <div className={'container'}>
                 <Route exact path="/" component={User}/>
                 <Route path="/user" component={User}/>
-                <Route path="/select" component={Select}/>
+                <Route path="/brand/:type" component={Select}/>
+                <Route path="/clothes/:type" component={Clothes}/>
                 <Route path="/result" component={Result}/>
-                <Route path="/clothes" component={Clothes}/>
-                <Route path="/recommended-clothes" component={RecommendedClothes}/>
-                <Route path="/recommended-clothes-detail" component={RecommendedClothesDetail}/>
+                <Route path="/recommended" component={RecommendedClothes}/>
             </div>
         );
     }
