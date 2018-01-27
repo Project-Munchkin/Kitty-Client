@@ -15,7 +15,7 @@ class User extends Component {
         return (
             <div>
                 <Header/>
-                <div className="content">
+                <div className="content user">
                     <div className="content-explain">
                         <span>
                             피팅을 원하시는 회원님의 <br/>정보를 알려주세요!

@@ -35,8 +35,11 @@ body, button, input, select, table, textarea, pre {
 }
 
 .content {
-    width: 280px;
     margin: 0 auto;
+}
+
+.content.user{
+    width: 280px;
 }
 
 .content-explain {
