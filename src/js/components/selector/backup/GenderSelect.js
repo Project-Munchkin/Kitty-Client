@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import TYPES from "../../types";
+import TYPES from "../../../types";
 
 class GenderSelect extends Component {
 

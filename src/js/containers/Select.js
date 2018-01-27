@@ -3,9 +3,9 @@ import {connect} from "react-redux";
 import {withRouter} from "react-router-dom";
 import * as actions from "../store/actions";
 
-import ShoulderSelect from "../components/selector/ShoulderSelect";
-import ArmSelect from "../components/selector/ArmSelect";
-import LegSelect from "../components/selector/LegSelect";
+import ShoulderSelect from "../components/selector/backup/ShoulderSelect";
+import ArmSelect from "../components/selector/backup/ArmSelect";
+import LegSelect from "../components/selector/backup/LegSelect";
 
 class Select extends Component {
 

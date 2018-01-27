@@ -1,10 +1,12 @@
-import React, {Component} from 'react'
-import {withRouter} from 'react-router-dom'
-import {connect} from 'react-redux'
-import * as actions from '../store/actions/index'
+import React, {Component} from "react";
+import {withRouter} from "react-router-dom";
+import {connect} from "react-redux";
+import * as actions from "../store/actions/index";
 
-import Header from '../components/header'
-
+import Header from "../components/header";
+import ToggleSelector from "../components/selector/ToggleSelector";
+import ButtonSelector from "../components/selector/ButtonSelector";
+import ScrollSelector from "../components/selector/ScrollSelector";
 class User extends Component {
 
     constructor(props) {
@@ -15,36 +17,11 @@ class User extends Component {
         return (
             <div>
                 <Header/>
-                <div className="content user">
-                    <div className="content-explain">
-                        <span>
-                            피팅을 원하시는 회원님의 <br/>정보를 알려주세요!
-                        </span>
-                    </div>
-                    <div className="select-box user">
-                        <div className="selector toggle">
-                            <span className="label">성별</span>
-                            <div className="options">남</div>
-                        </div>
-                        <div className="selector click">
-                            <span className="label">체형</span>
-                            <div className="options">
-                                <ul>
-                                    {  /* [D] 선택된 것은 active 클래스 */}
-                                    <li className="active">통통</li>
-                                    <li>보통</li>
-                                    <li>마름</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="selector scroll">
-                            <span className="label">키</span>
-                            <div className="options">
-                                <option>
-                                    170cm
-                                </option>
-                            </div>
-                        </div>
+                <div className={"content user"}>
+                    <div className={"select-box user"}>
+                        <ToggleSelector/>
+                        <ButtonSelector/>
+                        <ScrollSelector/>
                     </div>
                     <div className="button-next">
                         <a>다음으로 >></a>

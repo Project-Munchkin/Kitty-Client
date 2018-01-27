@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import TYPES from '../../types'
+import TYPES from '../../../types'
 
 class LegSelect extends Component {
 
