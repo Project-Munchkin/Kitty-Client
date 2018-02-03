@@ -109,12 +109,6 @@ class User extends Component {
     }
 }
 
-const mapStateToProps = (state) => {
-    return {
-        user: state.user,
-    };
-};
-
 const mapDispatchToProps = (dispatch) => {
     return {
         handleSetGender: (gender) => {
@@ -138,4 +132,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(User));
+export default withRouter(connect(undefined, mapDispatchToProps)(User));

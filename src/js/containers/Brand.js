@@ -1,6 +1,9 @@
 import React, {Component} from 'react'
 
 import Header from "../components/header";
+import {connect} from "react-redux";
+import {withRouter} from "react-router-dom";
+import * as actions from "../store/actions/index";
 
 class Brand extends Component {
 
@@ -30,14 +33,15 @@ class Brand extends Component {
         this.handleClickBrand = ::this.handleClickBrand;
     }
 
-    handleClickBrand() {
+    handleClickBrand(brandName) {
+        this.props.handleSetBrand(brandName);
         this.props.history.push('/clothes');
     }
 
     render() {
         const brandIcons = this.state.brandList.map((item, index) => {
             return (
-                <li key={index} onClick={this.handleClickBrand}>
+                <li key={index} onClick={()=>{this.handleClickBrand(item.name)}}>
                     <div className="img-wrapper">
                         <img src={item.image}/>
                     </div>
@@ -66,4 +70,13 @@ class Brand extends Component {
     }
 }
 
-export default Brand;
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        handleSetBrand: (brand) => {
+            dispatch(actions.setBrand(brand));
+        }
+    }
+};
+
+export default withRouter(connect(undefined, mapDispatchToProps)(Brand));

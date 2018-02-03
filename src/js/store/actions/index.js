@@ -1,43 +1,50 @@
 import * as ACTION_TYPES from './ActionTypes'
 
-export function setGender (gender){
+export function setGender(gender) {
     return {
-        type : ACTION_TYPES.SET_GENDER,
+        type: ACTION_TYPES.SET_GENDER,
         gender
     }
 }
 
-export function setBodyType (bodyType){
+export function setBodyType(bodyType) {
     return {
-        type : ACTION_TYPES.SET_BODY_TYPE,
+        type: ACTION_TYPES.SET_BODY_TYPE,
         bodyType
     }
 }
 
-export function setHeight (height){
+export function setHeight(height) {
     return {
-        type : ACTION_TYPES.SET_BODY_HEIGHT,
+        type: ACTION_TYPES.SET_BODY_HEIGHT,
         height
     }
 }
 
-export function setShoulder (shoulder){
+export function setShoulder(shoulder) {
     return {
-        type : ACTION_TYPES.SET_SHOULDER,
+        type: ACTION_TYPES.SET_SHOULDER,
         shoulder
     }
 }
 
-export function setArm (arm){
+export function setArm(arm) {
     return {
-        type : ACTION_TYPES.SET_ARM,
+        type: ACTION_TYPES.SET_ARM,
         arm
     }
 }
 
-export function setLeg (leg){
+export function setLeg(leg) {
     return {
-        type : ACTION_TYPES.SET_LEG,
+        type: ACTION_TYPES.SET_LEG,
         leg
+    }
+}
+
+export function setBrand(brand) {
+    return {
+        type: ACTION_TYPES.SET_BRAND,
+        brand
     }
 }
