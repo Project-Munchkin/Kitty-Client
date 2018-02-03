@@ -4,11 +4,48 @@ import Header from "../components/header";
 
 class Brand extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
+        this.state = {
+            brandList: [
+                {
+                    name: '유니클로',
+                    image: '../../img/brand/uniqlo.png'
+                },
+                {
+                    name: '지오다노',
+                    image: '../../img/brand/giordano.png'
+                },
+                {
+                    name: 'ZARA',
+                    image: '../../img/brand/zara.jpg'
+                },
+                {
+                    name: 'H&M',
+                    image: '../../img/brand/hm.png'
+                }
+            ]
+        };
+
+        this.handleClickBrand = ::this.handleClickBrand;
+    }
+
+    handleClickBrand() {
+        this.props.history.push('/clothes');
     }
 
     render() {
+        const brandIcons = this.state.brandList.map((item, index) => {
+            return (
+                <li key={index} onClick={this.handleClickBrand}>
+                    <div className="img-wrapper">
+                        <img src={item.image}/>
+                    </div>
+                    <span className="label">{item.name}</span>
+                </li>
+            )
+        });
+
         return (
             <div>
                 <Header/>
@@ -20,30 +57,7 @@ class Brand extends Component {
                     </div>
                     <div className="result">
                         <ul>
-                            <li>
-                                <div className="img-wrapper">
-                                    <img src="../../img/brand/uniqlo.png"/>
-                                </div>
-                                <span className="label">유니클로</span>
-                            </li>
-                            <li>
-                                <div className="img-wrapper">
-                                    <img src="../../img/brand/giordano.png"/>
-                                </div>
-                                <span className="label">지오다노</span>
-                            </li>
-                            <li>
-                                <div className="img-wrapper">
-                                    <img src="../../img/brand/zara.jpg"/>
-                                </div>
-                                <span className="label">자라</span>
-                            </li>
-                            <li>
-                                <div className="img-wrapper">
-                                    <img src="../../img/brand/hm.png"/>
-                                </div>
-                                <span className="label">H&M</span>
-                            </li>
+                            {brandIcons}
                         </ul>
                     </div>
                 </div>
