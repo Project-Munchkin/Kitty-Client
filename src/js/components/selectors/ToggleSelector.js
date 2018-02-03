@@ -15,11 +15,11 @@ class ToggleSelector extends Component {
         const target = e.target;
         const data = {};
         if (target.checked) {
-            data.index = 0;
-            data.value = this.props.options[0].value;
-        } else {
             data.index = 1;
             data.value = this.props.options[1].value;
+        } else {
+            data.index = 0;
+            data.value = this.props.options[0].value;
         }
 
         this.props.selectCallback && this.props.selectCallback(data);
