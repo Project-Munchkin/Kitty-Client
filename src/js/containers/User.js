@@ -31,7 +31,7 @@ class User extends Component {
     }
 
     handleSelectGender(data) {
-        this.props.handleSelectGender(data.value);
+        this.props.handleSetGender(data.value);
     }
 
     handleSelectBodyType(data) {
@@ -118,8 +118,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        handleToggleGender: () => {
-            dispatch(actions.toggleGender());
+        handleSetGender: (gender) => {
+            dispatch(actions.setGender(gender));
         },
         handleSetBodyType: (bodyType) => {
             dispatch(actions.setBodyType(bodyType));

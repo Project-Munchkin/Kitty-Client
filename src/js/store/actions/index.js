@@ -1,8 +1,8 @@
 import * as ACTION_TYPES from './ActionTypes'
 
-export function toggleGender (gender){
+export function setGender (gender){
     return {
-        type : ACTION_TYPES.TOGGLE_GENDER,
+        type : ACTION_TYPES.SET_GENDER,
         gender
     }
 }
