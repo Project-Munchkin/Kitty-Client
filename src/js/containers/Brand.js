@@ -36,12 +36,15 @@ class Brand extends Component {
     handleClickBrand(brandName) {
         this.props.handleSetBrand(brandName);
         this.props.history.push('/clothes');
+
     }
 
     render() {
         const brandIcons = this.state.brandList.map((item, index) => {
             return (
-                <li key={index} onClick={()=>{this.handleClickBrand(item.name)}}>
+                <li key={index} onClick={() => {
+                    this.handleClickBrand(item.name)
+                }}>
                     <div className="img-wrapper">
                         <img src={item.image}/>
                     </div>

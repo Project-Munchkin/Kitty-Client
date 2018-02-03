@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 
 import Header from "../components/header";
+import {connect} from "react-redux";
+import {withRouter} from "react-router-dom";
 
 class Clothes extends Component {
 
@@ -64,4 +66,5 @@ class Clothes extends Component {
     }
 }
 
-export default Clothes;
+
+export default withRouter(connect(undefined, undefined)(Clothes));
