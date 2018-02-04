@@ -36,7 +36,6 @@ class Brand extends Component {
     handleClickBrand(brandName) {
         this.props.handleSetBrand(brandName);
         this.props.history.push('/clothes');
-
     }
 
     render() {

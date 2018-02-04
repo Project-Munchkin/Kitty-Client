@@ -36,6 +36,7 @@ class Clothes extends Component {
 
     handleClickClothes(clothesType){
         this.props.handleSetClothesType(clothesType);
+        this.props.history.push('/result');
     }
 
     render() {
