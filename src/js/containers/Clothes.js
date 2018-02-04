@@ -6,59 +6,62 @@ import {withRouter} from "react-router-dom";
 
 class Clothes extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
+        this.state = {
+            clothesList: [
+                {
+                    name: '상의',
+                    image: '../../img/clothes/1.jpg'
+                },
+                {
+                    name: '슬렉스',
+                    image: '../../img/clothes/2.jpg'
+                },
+                {
+                    name: '코트',
+                    image: '../../img/clothes/3.jpg'
+                },
+                {
+                    name: '상의',
+                    image: '../../img/clothes/4.jpg'
+                }
+
+            ]
+        };
+
+        this.handleClickClothes = ::this.handleClickClothes
+    }
+
+    handleClickClothes(){
+
     }
 
     render() {
+
+        const clothesIcons = this.state.clothesList.map((item, index) => {
+            return (
+                <li key={index}>
+                    <div className={"img-wrapper"}>
+                        <img src={item.image}/>
+                    </div>
+                    <div className={"label-wrapper"}>
+                        <span>{item.name}</span>
+                    </div>
+                </li>)
+        });
+
         return (
             <div>
                 <Header/>
-                <div className="clothes-content">
-                    <div className="clothes-content-explain">
+                <div className={"content clothes"}>
+                    <div className={"content-explain"}>
                         <span>
                             어떤 옷을 찾으세요?
                         </span>
                     </div>
-                    <div className="clothes">
-                        <ul>
-                            <li>
-                                <div className="img-wrapper">
-                                    <img src="../../img/clothes/1.jpg"/>
-                                </div>
-                                <span className="label">상의</span>
-                            </li>
-                            <li>
-                                <div className="img-wrapper">
-                                    <img src="../../img/clothes/2.jpg"/>
-                                </div>
-                                <span className="label">슬랙스</span>
-                            </li>
-                            <li>
-                                <div className="img-wrapper">
-                                    <img src="../../img/clothes/3.jpg"/>
-                                </div>
-                                <span className="label">코트</span>
-                            </li>
-                            <li>
-                                <div className="img-wrapper">
-                                    <img src="../../img/clothes/4.jpg"/>
-                                </div>
-                                <span className="label">상의</span>
-                            </li>
-                            <li>
-                                <div className="img-wrapper">
-                                    <img src="../../img/clothes/5.jpg"/>
-                                </div>
-                                <span className="label">하의</span>
-                            </li>
-                            <li>
-                                <div className="img-wrapper">
-                                    <img src="../../img/clothes/6.jpg"/>
-                                </div>
-                                <span className="label">외투</span>
-                            </li>
-                        </ul>
+                    <div className={"clothes"}>
+                        <ul>{clothesIcons}</ul>
                     </div>
                 </div>
             </div>

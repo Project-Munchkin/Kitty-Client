@@ -1,20 +1,12 @@
 /*결과 css */
-.clothes-content {
-    width: 315px;
-    margin: 0 auto;
+.content.clothes {
+    width: 280px;
 }
 
 .clothes-content-explain {
-    margin-left: 16px;
     font-size: 24px;
     font-weight: 300;
     letter-spacing: 0.1px;
-    text-align: left;
-}
-
-.clothes {
-    display: inline-block;
-    margin: 58px 0 0;
 }
 
 .clothes ul {
@@ -25,10 +17,7 @@
 .clothes ul li {
     float: left;
     display: inline;
-}
-
-.clothes ul li {
-    margin-right: 15px;
+    margin-top: 42px;
 }
 
 .clothes ul li:nth-child(3n) {
@@ -36,18 +25,16 @@
 }
 
 .clothes ul li div.img-wrapper {
-    width: 95px;
+    width: 140px;
     height: 129px;
 }
 
 .clothes ul li div.img-wrapper img {
-    width: 95px;
+    width: 140px;
 }
 
-.clothes ul li span.label {
-    display: inline-block;
-    width: 95px;
-    text-align: center;
+.clothes ul li .label-wrapper {
     font-size: 14px;
     letter-spacing: 0.1px;
+    text-align: center;
 }

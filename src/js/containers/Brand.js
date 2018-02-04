@@ -59,7 +59,7 @@ class Brand extends Component {
                 <div className="result-content">
                     <div className="content-explain">
                         <span>
-                            어떤 브랜드를 둘러보실래요?
+                            어떤 브랜드를 볼까요?
                         </span>
                     </div>
                     <div className="result">
