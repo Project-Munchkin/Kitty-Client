@@ -66,7 +66,6 @@ body, button, input, select, table, textarea, pre {
 }
 
 .selector .label {
-    display: inline-block;
     width: 45px;
     text-align: right;
 }
@@ -123,4 +122,36 @@ body, button, input, select, table, textarea, pre {
     top: 0;
     bottom: 0;
     margin: auto;
+}
+
+.opacity {
+    opacity: 0.25;
+}
+
+.hide {
+    display: none;
+}
+
+span.label {
+    display: inline-block;
+}
+
+span.label-en {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+div.img-wrapper {
+    width: 140px;
+    height: 129px;
+}
+
+div.img-wrapper img {
+    width: 140px;
+}
+
+div.label-wrapper {
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    text-align: center;
 }
