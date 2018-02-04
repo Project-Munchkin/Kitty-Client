@@ -48,3 +48,10 @@ export function setBrand(brand) {
         brand
     }
 }
+
+export function setClothesType(clothesType) {
+    return {
+        type: ACTION_TYPES.SET_CLOTHES_TYPE,
+        clothesType
+    }
+}

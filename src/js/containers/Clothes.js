@@ -3,6 +3,7 @@ import React, {Component} from 'react'
 import Header from "../components/header";
 import {connect} from "react-redux";
 import {withRouter} from "react-router-dom";
+import * as actions from "../store/actions";
 
 class Clothes extends Component {
 
@@ -11,42 +12,42 @@ class Clothes extends Component {
         this.state = {
             clothesList: [
                 {
-                    name: '상의',
+                    type: '상의',
                     image: '../../img/clothes/1.jpg'
                 },
                 {
-                    name: '슬렉스',
+                    type: '슬렉스',
                     image: '../../img/clothes/2.jpg'
                 },
                 {
-                    name: '코트',
+                    type: '코트',
                     image: '../../img/clothes/3.jpg'
                 },
                 {
-                    name: '상의',
+                    type: '상의',
                     image: '../../img/clothes/4.jpg'
                 }
 
             ]
         };
 
-        this.handleClickClothes = ::this.handleClickClothes
+        this.handleClickClothes = ::this.handleClickClothes;
     }
 
-    handleClickClothes(){
-
+    handleClickClothes(clothesType){
+        this.props.handleSetClothesType(clothesType);
     }
 
     render() {
 
         const clothesIcons = this.state.clothesList.map((item, index) => {
             return (
-                <li key={index}>
+                <li key={index} onClick={()=>{this.handleClickClothes(item.type)}}>
                     <div className={"img-wrapper"}>
                         <img src={item.image}/>
                     </div>
                     <div className={"label-wrapper"}>
-                        <span>{item.name}</span>
+                        <span>{item.type}</span>
                     </div>
                 </li>)
         });
@@ -69,5 +70,13 @@ class Clothes extends Component {
     }
 }
 
+const mapDispatchToProps = (dispatch) => {
+    return {
+        handleSetClothesType: (clothesType) => {
+            dispatch(actions.setClothesType(clothesType));
+        }
+    }
+};
 
-export default withRouter(connect(undefined, undefined)(Clothes));
+
+export default withRouter(connect(undefined, mapDispatchToProps)(Clothes));

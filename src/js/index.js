@@ -5,11 +5,12 @@ import ReactDom from 'react-dom'
 import { HashRouter } from 'react-router-dom';
 
 // redux
-import {createStore} from 'redux'
+import {createStore, applyMiddleware} from 'redux'
 import {Provider} from 'react-redux'
 import reducers from './store/reducers'
+import loggerMiddleware from './middleware/logger'
 
-const store = createStore(reducers);
+const store = createStore(reducers, applyMiddleware(loggerMiddleware));
 
 // app
 import App from './containers/App'
