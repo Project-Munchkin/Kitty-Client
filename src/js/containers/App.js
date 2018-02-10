@@ -6,7 +6,6 @@ import Brand from "./Brand";
 import Clothes from "./Clothes";
 import Result from "./Result";
 import RecommendedClothes from "./RecommendedClothes";
-import RecommendedClothesDetail from "./RecommendedClothesDetail";
 
 class App extends Component {
 

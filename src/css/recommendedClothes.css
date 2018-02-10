@@ -1,65 +1,35 @@
 /*결과 css */
-.recommended-clothes-content {
+.content.recommended {
     width: 307px;
-    margin: 0 auto;
 }
 
-
-.recommended-clothes-content-explain {
-    margin-left: 12px;
-    font-size: 24px;
-    font-weight: 300;
-    letter-spacing: 0.1px;
-    text-align: left;
-}
-
-.recommended-clothes {
+.recommended ul {
     display: inline-block;
+    list-style-type: none;
     margin: 5px 0 42px;
 }
 
-.recommended-clothes ul {
-    display: inline-block;
-    list-style-type: none;
-}
-
-.recommended-clothes ul li {
+.recommended ul li {
     float: left;
     display: inline;
     margin-top: 46px;
     position: relative;
 }
 
-.recommended-clothes ul li:first-child {
+.recommended ul li:first-child {
     margin-top: 0;
 }
 
-.recommended-clothes ul li div.clothes-summary {
+.recommended ul li div.clothes-summary {
     height: 320px;
 }
 
-.recommended-clothes ul li div.clothes-summary div.img-wrapper {
+.recommended ul li div.clothes-summary div.img-wrapper {
     width: 307px;
     height: 308px;
-    margin-bottom: -4px;
+    margin-bottom: -3px;
 }
 
-.recommended-clothes ul li div.clothes-summary div.img-wrapper img {
+.recommended ul li div.clothes-summary div.img-wrapper img {
     width: 307px;
-}
-
-.recommended-clothes ul li div.clothes-summary span.label {
-    display: inline-block;
-    width: 307px;
-    height: 16px;
-    text-align: center;
-    font-size: 14px;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 0.1px;
-}
-
-span.label-en {
-    font-family: 'Roboto', sans-serif;
 }

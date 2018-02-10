@@ -24,17 +24,4 @@
     margin-right: 0;
 }
 
-.clothes ul li div.img-wrapper {
-    width: 140px;
-    height: 129px;
-}
 
-.clothes ul li div.img-wrapper img {
-    width: 140px;
-}
-
-.clothes ul li .label-wrapper {
-    font-size: 14px;
-    letter-spacing: 0.1px;
-    text-align: center;
-}
