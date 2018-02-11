@@ -1,0 +1,60 @@
+.content.brand {
+    width: 279px;
+}
+
+.brand-box.brand {
+    margin-top: 43px;
+}
+
+.brand-box ul {
+    list-style-type: none;
+}
+
+.brand-box ul li {
+    float: left;
+    display: inline;
+    margin-bottom: 23px;
+}
+
+.brand-box ul li:nth-child(odd) {
+    margin-right: 23px;
+}
+
+.brand-box ul li div.img-wrapper {
+    width: 122px;
+    height: 122px;
+    border-radius: 17px;
+    border: solid 3px #eeeeee;
+}
+
+.brand-box ul li div.img-wrapper img {
+    width: 122px;
+}
+
+.brand-box ul li.active div.img-wrapper {
+    background-image: linear-gradient(#ac1e4c, #ac1e4c);
+    background-blend-mode: multiply;
+    width: 128px;
+    height: 128px;
+    border: 0;
+}
+
+.recommended-button {
+    position: fixed;
+    text-align: center;
+    bottom: 62px;
+    width: 255px;
+    height: 67px;
+    line-height: 67px;
+    border-radius: 33.5px;
+    background-color: #ac1e4c;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+    margin-left: 12px;
+}
+
+.recommended-button span {
+    vertical-align: middle;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+}
