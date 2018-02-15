@@ -14,6 +14,8 @@ export default function user(state = initialState, action) {
             return {...state, brand: action.brand};
         case ACTION_TYPES.SET_CLOTHES_TYPE:
             return {...state, clothesType: action.clothesType};
+        case ACTION_TYPES.SET_INITIAL:
+            return {...initialState};
         default:
             return state;
     }

@@ -7,3 +7,5 @@ export const SET_LEG = "SET_LEG";
 
 export const SET_BRAND = "SET_BRAND";
 export const SET_CLOTHES_TYPE = "SET_CLOTHES_TYPE";
+
+export const SET_INITIAL = "SET_INITIAL";

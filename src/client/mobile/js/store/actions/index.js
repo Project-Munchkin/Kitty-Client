@@ -55,3 +55,9 @@ export function setClothesType(clothesType) {
         clothesType
     }
 }
+
+export function setInitialState() {
+    return {
+        type: ACTION_TYPES.SET_INITIAL
+    }
+}

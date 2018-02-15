@@ -26,6 +26,8 @@ export default function user(state = initialState, action) {
             return {...state, arm: action.arm};
         case ACTION_TYPES.SET_LEG:
             return {...state, leg: action.leg};
+        case ACTION_TYPES.SET_INITIAL:
+            return {...initialState};
         default:
             return state;
     }

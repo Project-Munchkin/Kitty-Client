@@ -1,43 +1,52 @@
 /*결과 css */
-.result-content {
-    width: 288px;
-    margin: 0 auto;
+.content.result {
+    width: 296px;
 }
 
-.result {
-    display: inline-block;
-    margin: 66px 19px 0;
-}
-
-.result ul {
-    display: inline-block;
-    list-style-type: none;
-}
-
-.result ul li {
-    float: left;
-    display: inline;
-}
-
-.result ul li:nth-child(odd) {
-    margin-right: 38px;
-}
-
-.result ul li div.img-wrapper {
-    width: 104px;
-    height: 104px;
-    border-radius: 17px;
-    margin-bottom: 15px;
-}
-
-.result ul li div.img-wrapper img {
-    width: 104px;
-}
-
-.result ul li span.label {
-    display: inline-block;
-    width: 104px;
+.content-explain.result {
     text-align: center;
+}
+
+.oval {
+    border-radius: 50%;
+}
+
+.result .oval {
+    width: 210px;
+    height: 210px;
+    border: solid 8px #eeeeee;
+    box-sizing: border-box;
+    margin: 26px auto;
+}
+
+.result .oval .label {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ac1e4c;
+}
+
+.result .oval .label-large {
+    margin: 31px auto -8px;
+    font-size: 100px;
+}
+
+.result-explain {
     font-size: 16px;
+    font-weight: 300;
+    line-height: 1.81;
     letter-spacing: 0.1px;
+    text-align: center;
+}
+
+.result .button {
+    margin-top: 27px;
+    text-align: center;
+}
+
+.result .button button {
+    color: #949494;
+    font-size: 12px;
+    font-weight: 300;
 }
