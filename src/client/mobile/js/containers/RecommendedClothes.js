@@ -13,28 +13,28 @@ class RecommendedClothes extends Component {
             recommendedList: [
                 {
                     name: 'Red Sweater',
-                    image: '../../img/recommendedclothes/RedSweater.png',
+                    image: '../img/recommendedclothes/RedSweater.png',
                     detail: {
                         contents: '품에 같이, 이상을 청춘에서만 투명하되 유소년에게서 그들에게 그와 것이다. 품으며, 예수는 충분히 못할 하였으며, 싶이 그들의 현저하게 부패뿐이다. 꽃 구할 인생을 튼튼하며, 때까지 이 뿐이다. 뜨고, 원대하고, 사라지지 청춘을 얼음이 피다. 살았으며, 우리 이상, 풀밭에 위하여 약동하다.'
                     }
                 },
                 {
                     name: 'Grey Sweater With Log',
-                    image: '../../img/recommendedclothes/GreySweaterWithLogo.png',
+                    image: '../img/recommendedclothes/GreySweaterWithLogo.png',
                     detail: {
                         contents: '품에 같이, 이상을 청춘에서만 투명하되 유소년에게서 그들에게 그와 것이다. 품으며, 예수는 충분히 못할 하였으며, 싶이 그들의 현저하게 부패뿐이다. 꽃 구할 인생을 튼튼하며, 때까지 이 뿐이다. 뜨고, 원대하고, 사라지지 청춘을 얼음이 피다. 살았으며, 우리 이상, 풀밭에 위하여 약동하다.'
                     }
                 },
                 {
                     name: 'Red Sweater With Logo',
-                    image: '../../img/recommendedclothes/RedSweaterWithLogo.png',
+                    image: '../img/recommendedclothes/RedSweaterWithLogo.png',
                     detail: {
                         contents: '품에 같이, 이상을 청춘에서만 투명하되 유소년에게서 그들에게 그와 것이다. 품으며, 예수는 충분히 못할 하였으며, 싶이 그들의 현저하게 부패뿐이다. 꽃 구할 인생을 튼튼하며, 때까지 이 뿐이다. 뜨고, 원대하고, 사라지지 청춘을 얼음이 피다. 살았으며, 우리 이상, 풀밭에 위하여 약동하다.'
                     }
                 },
                 {
                     name: 'Wine V Neck',
-                    image: '../../img/recommendedclothes/WineVNeck.png',
+                    image: '../img/recommendedclothes/WineVNeck.png',
                     detail: {
                         contents: '품에 같이, 이상을 청춘에서만 투명하되 유소년에게서 그들에게 그와 것이다. 품으며, 예수는 충분히 못할 하였으며, 싶이 그들의 현저하게 부패뿐이다. 꽃 구할 인생을 튼튼하며, 때까지 이 뿐이다. 뜨고, 원대하고, 사라지지 청춘을 얼음이 피다. 살았으며, 우리 이상, 풀밭에 위하여 약동하다.'
                     }

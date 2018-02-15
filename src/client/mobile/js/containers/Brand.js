@@ -15,27 +15,27 @@ class Brand extends Component {
             brandList: [
                 {
                     name: '유니클로',
-                    image: '../../img/brand/uniqlo.png'
+                    image: '../img/brand/uniqlo.png'
                 },
                 {
                     name: '지오다노',
-                    image: '../../img/brand/giordano.png'
+                    image: '../img/brand/giordano.png'
                 },
                 {
                     name: 'spao',
-                    image: '../../img/brand/spao.png'
+                    image: '../img/brand/spao.png'
                 },
                 {
                     name: 'H&M',
-                    image: '../../img/brand/h&m.png'
+                    image: '../img/brand/h&m.png'
                 },
                 {
                     name: 'ZARA',
-                    image: '../../img/brand/zara.png'
+                    image: '../img/brand/zara.png'
                 },
                 {
                     name: 'ZARA2',
-                    image: '../../img/brand/zara.png'
+                    image: '../img/brand/zara.png'
                 }
 
             ],

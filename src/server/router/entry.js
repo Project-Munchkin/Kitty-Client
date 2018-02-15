@@ -3,9 +3,8 @@ import express from "express";
 const router = express.Router();
 
 router.get('/', (req, res, next)=>{
-    res.json({
-        status: 200
-    });
+    res.type('.html');
+    res.redirect('/static/mobile/html/index.html');
 });
 
 export default router;

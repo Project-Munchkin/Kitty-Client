@@ -3,12 +3,12 @@ const path = require("path");
 
 module.exports = {
     entry: {
-        'bundle': path.resolve(process.cwd(), './src/client/mobile/js/')
+        'bundle.mobile': path.resolve(process.cwd(), './src/client/mobile/js/')
     },
 
     output: {
         filename: '[name].js',
-        path: path.resolve(process.cwd(), 'dist/js')
+        path: path.resolve(process.cwd(), 'dist/mobile/js')
     },
 
     module: {

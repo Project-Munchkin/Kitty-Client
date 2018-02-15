@@ -36,7 +36,8 @@
     "webpack-dev-server": "^2.9.7"
   },
   "scripts": {
-    "dev:mobile": "cross-env NODE_ENV=development APPLICATION_PHASE=DEV webpack-dev-server --config ./configs/webpack.config.mobile.js",
-    "build": "echo tbd"
+    "dev:mobile": "cross-env NODE_ENV=development webpack-dev-server --config ./configs/webpack.config.mobile.js",
+    "dev:server": "cross-env NODE_ENV=development nodemon --exec babel-node src/server/express.js",
+    "build:mobile": "webpack --config ./configs/webpack.config.mobile.js"
   }
 }

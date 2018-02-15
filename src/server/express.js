@@ -1,7 +1,9 @@
-import http from 'http'
+import http from "http";
+import path from "path";
 
-import Express from 'express'
-import bodyParser from 'body-parser'
+import Express from "express";
+import bodyParser from "body-parser";
+import Router from "./router";
 
 const app = new Express();
 const server = http.Server(app);
@@ -12,9 +14,10 @@ app.set('x-powered-by', false);
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json({limit: "50mb"}));
 
-// API v1
-app.use('/api', ImageApiV1);
-app.use(ErrorHandler);
+// router
+app.use('/static', Express.static(path.resolve(process.cwd(), './dist')));
+app.use(Router);
+
 
 process.on('SIGINT', () => {
     server.on('close', () => {
