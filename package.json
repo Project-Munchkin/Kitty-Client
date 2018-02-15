@@ -33,7 +33,7 @@
     "webpack-dev-server": "^2.9.7"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development APPLICATION_PHASE=DEV webpack-dev-server",
+    "dev:mobile": "cross-env NODE_ENV=development APPLICATION_PHASE=DEV webpack-dev-server --config ./configs/webpack.config.mobile.js",
     "build": "echo tbd"
   }
 }
