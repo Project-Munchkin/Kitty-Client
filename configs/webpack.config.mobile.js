@@ -1,4 +1,7 @@
 const webpack = require("webpack");
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 const path = require("path");
 
 module.exports = {
@@ -26,12 +29,23 @@ module.exports = {
         ],
     },
     plugins: [
+        new CleanWebpackPlugin(['./dist/mobile/'], {
+            root: process.cwd(),
+            allowExternal: true
+        }),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.DefinePlugin({
             'process.env': {
                 NODE_ENV: JSON.stringify(process.env.NODE_ENV) || '"production"'
             }
-        })
+        }),
+        new CopyWebpackPlugin([
+            {
+                from : path.join(process.cwd(), './src/client/mobile/'),
+                to : path.join(process.cwd(), './dist/mobile/'),
+                ignore: ['js/**']
+            },
+        ])
     ],
     devServer: {
         hot: true,
