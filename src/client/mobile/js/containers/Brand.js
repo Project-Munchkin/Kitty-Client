@@ -5,6 +5,8 @@ import {connect} from "react-redux";
 import {withRouter} from "react-router-dom";
 import * as actions from "../store/actions/index";
 
+import TYPES from "../types";
+
 class Brand extends Component {
 
     constructor(props) {
@@ -20,16 +22,25 @@ class Brand extends Component {
                     image: '../../img/brand/giordano.png'
                 },
                 {
-                    name: 'ZARA',
-                    image: '../../img/brand/zara.jpg'
+                    name: 'spao',
+                    image: '../../img/brand/spao.png'
                 },
                 {
                     name: 'H&M',
-                    image: '../../img/brand/hm.png'
+                    image: '../../img/brand/h&m.png'
+                },
+                {
+                    name: 'ZARA',
+                    image: '../../img/brand/zara.png'
+                },
+                {
+                    name: 'zara',
+                    image: '../../img/brand/zara.png'
                 }
+
             ],
             isMoving: false,
-            selectedIndex: -1
+            selectedIndex: TYPES.CONFIG.NOT_SELECTED
         };
 
         this._timeout = null;
@@ -59,14 +70,12 @@ class Brand extends Component {
             clearTimeout(this._timeout);
         }
 
-        const SHOW_TIMEOUT = 100;
-
         this._timeout = setTimeout(() => {
             this._timeout = null;
             this.setState({
                 isMoving: false
             });
-        }, SHOW_TIMEOUT);
+        }, TYPES.CONFIG.SHOW_TIMEOUT);
 
         if(!this.state.isMoving) {
             this.setState({
@@ -76,7 +85,11 @@ class Brand extends Component {
     }
 
     handleClickRecommendedButton() {
-        this.props.history.push('/recommended');
+        if (this.state.selectedIndex === TYPES.CONFIG.NOT_SELECTED) {
+            alert("브랜드를 선택하세요!");
+        } else {
+            this.props.history.push('/result');
+        }
     }
 
     render() {

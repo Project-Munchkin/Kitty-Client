@@ -29,5 +29,9 @@ export default {
             SHORT: 'short',
             LONG: 'long'
         }
+    },
+    CONFIG: {
+        NOT_SELECTED: -1,
+        SHOW_TIMEOUT: 100
     }
 }
