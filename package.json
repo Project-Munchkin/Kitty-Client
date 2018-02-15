@@ -15,6 +15,9 @@
   "homepage": "https://github.com/Project-Munchkin/Kitty-Client#readme",
   "dependencies": {
     "axios": "^0.17.1",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
