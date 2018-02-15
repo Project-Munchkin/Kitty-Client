@@ -39,7 +39,7 @@
     border: 0;
 }
 
-.fix-button {
+.fixed-button {
     position: fixed;
     text-align: center;
     bottom: 62px;
@@ -52,7 +52,7 @@
     margin-left: 12px;
 }
 
-.fix-button span {
+.fixed-button span {
     vertical-align: middle;
     color: #ffffff;
     font-size: 25px;

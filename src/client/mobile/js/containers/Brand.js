@@ -46,7 +46,7 @@ class Brand extends Component {
         this._timeout = null;
         this.handleClickBrand = ::this.handleClickBrand;
         this.handleScrollEvent = ::this.handleScrollEvent;
-        this.handleClickRecommendedButton = ::this.handleClickRecommendedButton;
+        this.handleClickFixedButton = ::this.handleClickFixedButton;
     }
 
     componentDidMount() {
@@ -84,7 +84,7 @@ class Brand extends Component {
         }
     }
 
-    handleClickRecommendedButton() {
+    handleClickFixedButton() {
         if (this.state.selectedIndex === TYPES.CONFIG.NOT_SELECTED) {
             alert("브랜드를 선택하세요!");
         } else {
@@ -119,8 +119,8 @@ class Brand extends Component {
                             {brandIcons}
                         </ul>
                     </div>
-                    <div className={`fix-button ${this.state.isMoving ? "hide" : ""}`}
-                        onClick={() => {this.handleClickRecommendedButton()}}>
+                    <div className={`fixed-button ${this.state.isMoving ? "hide" : ""}`}
+                        onClick={() => {this.handleClickFixedButton()}}>
                         <span className={"label"}>맞는 옷 찾으러 가기</span>
                     </div>
                 </div>
