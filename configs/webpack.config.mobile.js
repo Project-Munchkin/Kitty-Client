@@ -3,12 +3,12 @@ const path = require("path");
 
 module.exports = {
     entry: {
-        'bundle': path.resolve(__dirname, './src/js')
+        'bundle': path.resolve(process.cwd(), './src/client/mobile/js/')
     },
 
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, '../dist/js')
+        path: path.resolve(process.cwd(), 'dist/js')
     },
 
     module: {
@@ -40,7 +40,7 @@ module.exports = {
         disableHostCheck: true,
         port: 3000,
         open: false,
-        contentBase: "src",
+        contentBase: path.resolve(process.cwd(), './src/client/mobile'),
         publicPath: "/js",
         watchOptions: {
             aggregateTimeout: 300,
