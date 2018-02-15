@@ -39,7 +39,7 @@
     border: 0;
 }
 
-.recommended-button {
+.fix-button {
     position: fixed;
     text-align: center;
     bottom: 62px;
@@ -52,7 +52,7 @@
     margin-left: 12px;
 }
 
-.recommended-button span {
+.fix-button span {
     vertical-align: middle;
     color: #ffffff;
     font-size: 25px;

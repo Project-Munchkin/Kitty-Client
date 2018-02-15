@@ -119,7 +119,7 @@ class Brand extends Component {
                             {brandIcons}
                         </ul>
                     </div>
-                    <div className={`recommended-button ${this.state.isMoving ? "hide" : ""}`}
+                    <div className={`fix-button ${this.state.isMoving ? "hide" : ""}`}
                         onClick={() => {this.handleClickRecommendedButton()}}>
                         <span className={"label"}>맞는 옷 찾으러 가기</span>
                     </div>
