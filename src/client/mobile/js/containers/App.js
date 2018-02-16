@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import { Route } from "react-router-dom";
 
 import User from "./User";
+import UserDetail from "./UserDetail";
 import Brand from "./Brand";
 import Clothes from "./Clothes";
 import Result from "./Result";
@@ -17,7 +18,8 @@ class App extends Component {
         return (
             <div className={'container'}>
                 <Route exact path="/" component={User}/>
-                <Route path="/user" component={User}/>
+                <Route exact path="/user" component={User}/>
+                <Route exact path="/user/detail" component={UserDetail}/>
                 <Route path="/brand" component={Brand}/>
                 <Route path="/clothes" component={Clothes}/>
                 <Route path="/result" component={Result}/>

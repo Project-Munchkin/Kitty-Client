@@ -16,17 +16,11 @@ class User extends Component {
         super(props);
         this.state = {
             gender: types.USER.GENDER.MAN,
-            bodyType: types.USER.BODY_TYPE.NORMAL,
-            shoulder: types.USER.SHOULDER.NORMAL,
-            arm: types.USER.ARM.NORMAL,
-            leg: types.USER.LEG.NORMAL
+            bodyType: types.USER.BODY_TYPE.NORMAL
         };
 
         this.handleSelectGender = ::this.handleSelectGender;
         this.handleSelectBodyType = ::this.handleSelectBodyType;
-        this.handleSelectShoulder = ::this.handleSelectShoulder;
-        this.handleSelectArm = ::this.handleSelectArm;
-        this.handleSelectLeg = ::this.handleSelectLeg;
         this.handleClickButtonNext = ::this.handleClickButtonNext;
     }
 
@@ -38,20 +32,8 @@ class User extends Component {
         this.props.handleSetBodyType(data.value);
     }
 
-    handleSelectShoulder(data) {
-        this.props.handleSetShoulder(data.value);
-    }
-
-    handleSelectArm(data) {
-        this.props.handleSetArm(data.value);
-    }
-
-    handleSelectLeg(data) {
-        this.props.handleSetLeg(data.value);
-    }
-
     handleClickButtonNext(){
-        this.props.history.push('/brand');
+        this.props.history.push('/user/detail');
     }
 
     render() {
@@ -59,6 +41,9 @@ class User extends Component {
             <div>
                 <Header/>
                 <div className={"content user"}>
+                    <div>
+                        <span className={"content-explain"}>피팅을 원하시는 회원님의 정보를 알려주세요.</span>
+                    </div>
                     <div className={"select-box user"}>
                         <ToggleSelector label={'성별'}
                                         options={[
@@ -77,30 +62,6 @@ class User extends Component {
                                         initIndex={1}
                                         selectCallback={this.handleSelectBodyType}/>
                         <ScrollSelector/>
-                        <ButtonSelector label={'어깨'}
-                                        options={[
-                                            {name: '좁다', value: types.USER.SHOULDER.NARROW},
-                                            {name: '보통', value: types.USER.SHOULDER.NORMAL},
-                                            {name: '넓다', value: types.USER.SHOULDER.WIDE},
-                                        ]}
-                                        initIndex={1}
-                                        selectCallback={this.handleSelectShoulder}/>
-                        <ButtonSelector label={'팔'}
-                                        options={[
-                                            {name: '짧다', value: types.USER.ARM.SHORT},
-                                            {name: '보통', value: types.USER.ARM.NORMAL},
-                                            {name: '길다', value: types.USER.ARM.LONG},
-                                        ]}
-                                        initIndex={1}
-                                        selectCallback={this.handleSelectArm}/>
-                        <ButtonSelector label={'다리'}
-                                        options={[
-                                            {name: '짧다', value: types.USER.LEG.SHORT},
-                                            {name: '보통', value: types.USER.LEG.NORMAL},
-                                            {name: '길다', value: types.USER.LEG.LONG},
-                                        ]}
-                                        initIndex={1}
-                                        selectCallback={this.handleSelectLeg}/>
                     </div>
                     <BottomButton name={'다음으로'} onClickListener={this.handleClickButtonNext} />
                 </div>
@@ -119,16 +80,7 @@ const mapDispatchToProps = (dispatch) => {
         },
         handleSetHeight: (height) => {
             dispatch(actions.setHeight(height));
-        },
-        handleSetShoulder: (shoulder) => {
-            dispatch(actions.setShoulder(shoulder));
-        },
-        handleSetArm: (arm) => {
-            dispatch(actions.setArm(arm));
-        },
-        handleSetLeg: (leg) => {
-            dispatch(actions.setLeg(leg));
-        },
+        }
     }
 };
 
