@@ -39,7 +39,9 @@
   },
   "scripts": {
     "dev:mobile": "cross-env NODE_ENV=development webpack-dev-server --config ./configs/webpack.config.mobile.js",
+    "dev:pc": "cross-env NODE_ENV=development webpack-dev-server --config ./configs/webpack.config.pc.js",
     "dev:server": "cross-env NODE_ENV=development nodemon --exec babel-node src/server/express.js",
-    "build:mobile": "webpack --config ./configs/webpack.config.mobile.js"
+    "build:mobile": "webpack --config ./configs/webpack.config.mobile.js",
+    "build:pc": "webpack --config ./configs/webpack.config.pc.js"
   }
 }
