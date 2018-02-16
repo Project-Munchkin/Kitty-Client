@@ -76,7 +76,7 @@ class User extends Component {
                                         initIndex={1}
                                         selectCallback={this.handleSelectLeg}/>
                     </div>
-                    <BottomButton name={'다음으로'} onClickListener={this.handleClickButtonNext} />
+                    <BottomButton name={'다음으로 >>'} onClickListener={this.handleClickButtonNext} />
                 </div>
             </div>
         );

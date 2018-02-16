@@ -63,7 +63,7 @@ class User extends Component {
                                         selectCallback={this.handleSelectBodyType}/>
                         <ScrollSelector/>
                     </div>
-                    <BottomButton name={'다음으로'} onClickListener={this.handleClickButtonNext} />
+                    <BottomButton name={'다음으로 >>'} onClickListener={this.handleClickButtonNext} />
                 </div>
             </div>
         );
