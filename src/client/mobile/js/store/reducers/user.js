@@ -5,7 +5,7 @@ import * as ACTION_TYPES from '../actions/ActionTypes'
 const initialState = {
     gender: TYPES.USER.GENDER.MAN,
     bodyType: TYPES.USER.BODY_TYPE.NORMAL,
-    height: 170,
+    height: 0,
     shoulder: TYPES.USER.SHOULDER.NORMAL,
     arm: TYPES.USER.ARM.NORMAL,
     leg: TYPES.USER.LEG.NORMAL

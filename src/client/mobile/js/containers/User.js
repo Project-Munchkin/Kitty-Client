@@ -61,7 +61,7 @@ class User extends Component {
                                         ]}
                                         initIndex={1}
                                         selectCallback={this.handleSelectBodyType}/>
-                        <ScrollSelector/>
+                        <ScrollSelector height={this.props.height} onChangeHeight={this.props.handleSetHeight}/>
                     </div>
                     <BottomButton name={'다음으로 >>'} onClickListener={this.handleClickButtonNext} />
                 </div>
@@ -69,6 +69,12 @@ class User extends Component {
         );
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        height: state.user.height
+    };
+};
 
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -84,4 +90,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-export default withRouter(connect(undefined, mapDispatchToProps)(User));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(User));

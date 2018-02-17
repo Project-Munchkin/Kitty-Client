@@ -97,6 +97,17 @@ body, button, input, select, table, textarea, pre {
     opacity: 1.0;
 }
 
+.selector.scroll input{
+    width: 50px;
+    height: 26px;
+    border: 1px solid #ae003c;
+    border-radius: 5px;
+    color: #ae003c;
+    font-size: 15px;
+    text-align: right;
+    padding-right: 5px;
+}
+
 .button {
 }
 

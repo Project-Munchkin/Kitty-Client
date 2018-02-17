@@ -6,7 +6,6 @@ const router = express.Router();
 router.get('/', (req, res, next)=>{
     const md = new MobileDetect(req.headers['user-agent']);
 
-    console.log('md.mobile()', md.mobile());
     res.type('.html');
     if(md.mobile()){
         res.redirect('/static/mobile/html/index.html');

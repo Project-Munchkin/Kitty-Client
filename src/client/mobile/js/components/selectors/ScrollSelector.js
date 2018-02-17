@@ -2,11 +2,8 @@ import React, {Component} from 'react'
 
 class ScrollSelector extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state = {
-            selected: null
-        }
     }
 
     render() {
@@ -14,9 +11,7 @@ class ScrollSelector extends Component {
             <div className="selector scroll">
                 <span className="label">키</span>
                 <div className="options">
-                    <option>
-                        170cm
-                    </option>
+                    <input type="number" value={this.props.height} onChange={(e)=>{this.props.onChangeHeight(e.target.value)}}/> <span>cm</span>
                 </div>
             </div>
         );
