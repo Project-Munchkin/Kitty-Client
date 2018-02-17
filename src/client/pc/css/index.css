@@ -1,7 +1,7 @@
 body {
     margin: 0;
+    padding: 0;
     border-top: 5px solid #ac1d4c;
-    width: 1920px;
     font-family: 'NanumSquare', 'Roboto', sans-serif;
 }
 .topNav {
@@ -45,28 +45,32 @@ img.logo {
     font-size: 16px;
 }
 
-.header {
-    background-color: rgb(226, 226, 226);
+.banner {
     color: white;
+    min-width: 980px;
     height: 500px;
     background-image: url('../img/mid/main_img_01.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 0;
 }
-.headerText {
+.banner-text {
+    position: relative;
+    margin: 0 auto;
     text-align: center;
-    margin-left: 450px;
-    display: inline-block;
-    margin-top: 215px;
+    top: 215px;
+    left: -200px;
     width: 600px;
 }
-.header .catch {
+.banner .catch {
     height: 36px;
     font-size: 50px;
     color: white;
     font-weight: 900;
     margin-bottom: 20px;
 }
-.header .description {
+.banner .description {
     margin-top:20px;
     font-size: 14px;
     height: 14px;
@@ -95,7 +99,7 @@ img.logo {
     height: 545px;
     padding: 0;
 }
-.step_header {
+.step_banner {
     font-size: 21px;
     font-weight: normal;
     font-weight: bold;
