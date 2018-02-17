@@ -23,6 +23,10 @@ process.on('SIGINT', () => {
     server.on('close', () => {
         process.exit(0);
     });
+
+    server.close(()=>{
+        console.log('server closed');
+    });
 });
 
 app.listen(port, () => {
