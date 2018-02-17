@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MUCH FIT</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+</head>
+<body>
+    <div class="topNav">
+        <a href="#"><img class="logo" src="../img/top/top_logo.png" alt="MUCHFIT 로고"></a>
+        <nav>
+            <ul>
+                <li><a href="#" class="selected">회원가입</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">서비스소개</a></li>
+                <li><a href="#">이용가이드</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header class="header">
+        <p class="headerText">
+            <span class="catch">FIND A FIT FOR YOU</span>
+            <br/>
+            <span class="description">
+                머치핏이 자신에게 딱 알맞는 사이즈의 옷을 찾아드립니다. 
+            </span>
+        </p>
+    </header>
+    <div class="manualIcon">
+        <p>
+            <span class="single text thin">MUCH</span><span class="single text bold">FIT</span>
+                <br />
+            <span class="single guide">&nbsp;&nbsp;&nbsp;이용가이드 &nbsp;></span>
+        </p>
+    </div>
+    <div class="manual">
+        <div id="step1" class="step step1">
+            <h2 class="step_header">
+                STEP 1
+            </h2>
+            <span class="instruction">
+                서비스 이용을 위해 간단한 신체정보를 알려주세요 :)
+            </span>
+            <div class="screen" >
+                <table class="selectTable">
+                    <tr>
+                        <th>
+                                <span class="selectName">성별</span>
+                        </th>
+                        <td>
+                            <input type="radio" id="male" name="gender" class="selector" checked="checked" value="male">
+                            <label class="selectMenu active" for="male">남성</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="female" name="gender" class="selector" value="female">
+                            <label class="selectMenu" for="female">여성</label>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="selectName">체형</span>
+                        </th>
+                        <td>
+                            <input type="radio" id="thin" name="body" class="selector" checked="checked" value="thin">
+                            <label class="selectMenu active" for="thin">마름</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="normal" name="body" class="selector" value="normal">
+                            <label class="selectMenu" for="normal">보통</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="fat" name="body" class="selector" value="fat">
+                            <label class="selectMenu" for="fat">뚱뚱</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>키<span style="color: #666666; font-weight: normal;">(cm)</span></th>
+                        <td colspan="3" class="textSelect">
+                            <input type="text" id="height" class="inputText" placeholder="자신의 키를 적어주세요" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <!--빈칸  -->
+                        </th> 
+                        <td colspan="3" class="select_desc">
+                            * 0.5cm는 반올림처리 됩니다.
+                        </td>
+                    </tr>
+                </table>
+            </div> <!-- 선택 메뉴 -->
+            <p class="nextStep">
+                <a href="#step2">다음 단계로</a>
+            </p>
+        </div><!-- step1 종료 지점 -->
+        <div id="step2" class="step step2">
+            <h2 class="step_header">
+                STEP 2
+            </h2>
+            <p class="instruction">
+                조금 더 정확한 피팅을 위해 자세하게 알려주세요!
+                <br>
+                <span class="instDesc">대략적인 자신의 신체비율을 고려해주세요.</span>
+            </p>
+            <div class="screen" >
+                <table class="selectTable">
+                    <tr>
+                        <th>
+                                <span class="selectName">어깨너비</span>
+                        </th>
+                        <td>
+                            <input type="radio" id="small-shoulder" name="shoulder" class="selector" checked="checked" value="small">
+                            <label class="selectMenu active" for="small-shoulder">좁다</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="normal-shoulder" name="shoulder" class="selector" value="normal">
+                            <label class="selectMenu" for="normal-shoulder">보통</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="larget-shoulder" name="shoulder" class="selector" value="large">
+                            <label class="selectMenu" for="larget-shoulder">넓다</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="selectName">팔길이</span>
+                        </th>
+                        <td>
+                            <input type="radio" id="short-arm" name="arm" class="selector" checked="checked" value="short">
+                            <label class="selectMenu active" for="short-arm">짧다</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="normal-arm" name="arm" class="selector" value="normal">
+                            <label class="selectMenu" for="normal-arm">보통</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="long-arm" name="arm" class="selector" value="long">
+                            <label class="selectMenu" for="long-arm">길다</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>다리길이</th>
+                        <td>
+                            <input type="radio" id="short-leg" name="leg" class="selector" checked="checked" value="short">
+                            <label class="selectMenu active" for="short-leg">짧다</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="normal-leg" name="leg" class="selector" value="normal">
+                            <label class="selectMenu" for="normal-leg">보통</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="long-leg" name="leg" class="selector" value="long">
+                            <label class="selectMenu" for="long-leg">길다</label>
+                        </td>
+                    </tr>
+                </table>
+            </div>  <!-- 선택 메뉴 -->
+            
+            <p class="nextStep">
+               <a href="#step1" class="">이전 단계로</a>
+               <a href="#step3" class="step_move">다음 단계로</a>
+            </p>
+        </div> <!-- step2 종료 -->
+            
+        <div id="step3" class="step step3">
+            <h2 class="step_header">
+                STEP 3
+            </h2>
+            <p class="instruction">
+                어떤 종류의 옷을 찾으시나요?
+                <br>
+                <span class="instDesc">찾으시는 옷의 종류를 선택해주세요 :)</span>
+            </p>
+            <div class="screen" >
+            </div> <!-- 선택메뉴 -->
+            
+            <p class="nextStep">
+                <a href="#step2" class="">이전 단계로</a>
+                <a href="#step4" class="step_move">다음 단계로</a>
+            </p>
+        </div> <!-- step3 종료 -->
+         
+        <div id="step4" class="step step4">
+            <h2 class="step_header">
+                STEP 4
+            </h2>
+            <p class="instruction">
+                마지막 단계에요!
+                <br>
+                어떤 브랜드를 선호하시나요?
+            </p>
+            <div class="screen" >
+            </div> <!-- 선택메뉴 -->
+            
+            <p class="nextStep">
+                <a href="#step3" class="">이전 단계로</a>
+            </p>
+        </div> <!-- step4 종료 -->
+    </div><!-- main manual division 종료 -->
+    <footer class="main_footer">
+        <ul>
+            <li>이용약관</li>
+            <li>개인정보취급방침</li>
+            <li>이메일무단수집거부</li>
+        </ul>
+        <ul>
+            <li>상호명 : MUCHFIT (머치핏)</li>
+            <li>대표 : 디프만머치핏</li>
+        </ul>
+    </footer>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

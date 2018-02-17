@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    border-top: 5px solid #ac1d4c;
+    width: 1920px;
+    font-family: 'NanumSquare', 'Roboto', sans-serif;
+}
+.topNav {
+    height: 80px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: #333333;
+}
+img.logo {
+    height: 26px;
+    margin: 0;
+    margin-left: 370px;
+    margin-right: 675px;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.topNav nav ul {
+    height: 16px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 750px;
+}
+.topNav li {
+    float: left;
+    margin-right: 50px;
+    font-weight: 400;
+}
+.topNav a.selected {
+    color: #ac1d4c;
+    font-weight: 900;
+}
+.topNav a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+}
+
+.header {
+    background-color: rgb(226, 226, 226);
+    color: white;
+    height: 500px;
+    background-image: url('../img/mid/main_img_01.png');
+    padding: 0;
+}
+.headerText {
+    text-align: center;
+    margin-left: 450px;
+    display: inline-block;
+    margin-top: 215px;
+    width: 600px;
+}
+.header .catch {
+    height: 36px;
+    font-size: 50px;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.header .description {
+    margin-top:20px;
+    font-size: 14px;
+    height: 14px;
+    font-weight: normal;
+}
+
+.manualIcon {
+    display: flex;
+    background-color: #ac1d4c;
+    color: white;
+    border-radius: 100%;
+    width: 125px;
+    height: 125px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 50px;
+    margin-left: 370px;
+    position: fixed;
+}
+.step {
+    margin-top: 100px;
+    border-bottom: 1px solid #dcdcdc;
+    width: 1500px;
+    height: 545px;
+    padding: 0;
+}
+.step_header {
+    font-size: 21px;
+    font-weight: normal;
+    font-weight: bold;
+    color: #333333;
+    padding: 0;
+    box-sizing: border-box;
+}
+.instruction {
+    font-size: 35px;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-weight: 100;
+    display: block;
+    color:#333333;
+    line-height:35px;
+}
+.instDesc {
+    font-size: 16px;
+    color:#333333;
+}
+.screen {
+    display: flex;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    width: 620px;
+    height: 240px;
+    justify-content: center;
+    align-items: center;
+}
+.selectTable {
+    border: 0;
+    display: block;
+    font-size: 16px;
+    width: 400px;
+}
+.selectTable tr {
+    height: 35px;
+}
+.selectTable th {
+    text-align: left;
+    width: 130px;
+}
+.selectTable td {
+    text-align: left;
+    width: 95px;
+}
+.textSelect {
+    background-color: white;
+    border: solid 2px #dcdcdc;
+    padding:0;
+    margin: 0;
+    width: 250px;
+}
+.inputText {
+    outline: none;
+    background-color: inherit;
+    border: none;
+    padding-left: 10px;
+}
+.select_desc {
+    font-size: 12px;
+    color: #999999;
+    padding-left: 10px;
+
+}
+input[type="radio"].selector {
+    display:none;
+}
+
+.selectMenu {
+    color:#999999;
+}
+.selectMenu.active {
+    font-weight: bold;
+    color: #ac1d4c;
+}
+.nextStep {
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+}
+.manual {
+    text-align: center;
+    margin-left: 215px;
+}
+.single.guide {
+    font-size: 12px;
+    text-align: left;
+    color: white;
+}
+.single.thin {
+    font-weight: lighter;
+}
+.single.bold {
+    font-weight: bold;
+}
+.single.text {
+    font-size: 20px;
+}
+
+.step_move {
+    margin-left: 75px;
+    display:inline-block;
+}
+
+.main_footer {
+    /* width: 1920px; */
+    height: 315px;
+    background-color:#434242;
+}
+
+footer {
+    display: flex;
+    padding-top: 90px;
+    padding-left: 570px;
+}
+footer ul li {
+    list-style: none;
+    font-size: 12px;
+    line-height: 3.67;
+    color: rgba(250, 250, 250, 0.5);
+    margin-right: 100px;
+}
+
+label.selectMenu:hover {
+    font-weight: bolder;
+    color: #ac1d4c;
+    cursor: pointer;
+}
