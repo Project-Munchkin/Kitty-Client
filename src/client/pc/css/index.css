@@ -3,6 +3,7 @@ body {
     padding: 0;
     border-top: 5px solid #ac1d4c;
     font-family: 'NanumSquare', 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 .topNav {
     height: 80px;
