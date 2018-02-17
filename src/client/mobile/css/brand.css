@@ -3,7 +3,8 @@
 }
 
 .brand-box.brand {
-    margin-top: 43px;
+    margin: 43px 0 15px;
+    display: inline-block;
 }
 
 .brand-box ul {
@@ -11,6 +12,7 @@
 }
 
 .brand-box ul li {
+    position: relative;
     float: left;
     display: inline;
     margin-bottom: 23px;
@@ -32,9 +34,32 @@
 }
 
 .brand-box ul li.active div.img-wrapper {
-    background-image: linear-gradient(#ac1e4c, #ac1e4c);
-    background-blend-mode: multiply;
+    background-color: rgba(172, 30, 76, 0.92);
     width: 128px;
     height: 128px;
     border: 0;
+    z-index: 1;
+}
+
+.brand-box ul li.active div.img-wrapper img {
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.brand-box .brand-explain {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 18px;
+    text-align: center;
+    z-index: 2;
+}
+
+.brand-box .brand-explain span {
+    font-weight: 500;
+    font-size: 14.8px;
+    color: #ffffff;
 }

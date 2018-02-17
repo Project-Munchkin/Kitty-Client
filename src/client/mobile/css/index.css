@@ -169,10 +169,10 @@ div.label-wrapper {
     text-align: center;
 }
 
-.fixed-button {
-    position: fixed;
+
+.brand .bottom.button,
+.result .bottom.button {
     text-align: center;
-    bottom: 45px;
     width: 255px;
     height: 67px;
     line-height: 67px;
@@ -180,11 +180,10 @@ div.label-wrapper {
     background-color: #ac1e4c;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
     margin: 0 auto;
-    left: 0;
-    right: 0;
 }
 
-.fixed-button span {
+.brand .bottom.button span,
+.result .bottom.button span {
     vertical-align: middle;
     color: #ffffff;
     font-size: 25px;

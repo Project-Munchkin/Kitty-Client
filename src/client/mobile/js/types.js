@@ -31,7 +31,6 @@ export default {
         }
     },
     CONFIG: {
-        NOT_SELECTED: -1,
-        SHOW_TIMEOUT: 100
+        NOT_SELECTED: -1
     }
 }

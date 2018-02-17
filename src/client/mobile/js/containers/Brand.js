@@ -22,7 +22,7 @@ class Brand extends Component {
                     image: '../img/brand/giordano.png'
                 },
                 {
-                    name: 'spao',
+                    name: 'SPAO',
                     image: '../img/brand/spao.png'
                 },
                 {
@@ -39,22 +39,11 @@ class Brand extends Component {
                 }
 
             ],
-            isMoving: false,
             selectedIndex: TYPES.CONFIG.NOT_SELECTED
         };
 
-        this._timeout = null;
         this.handleClickBrand = ::this.handleClickBrand;
-        this.handleScrollEvent = ::this.handleScrollEvent;
-        this.handleClickFixedButton = ::this.handleClickFixedButton;
-    }
-
-    componentDidMount() {
-        window.addEventListener("scroll", this.handleScrollEvent);
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener("scroll", this.handleScrollEvent);
+        this.handleClickBottomButton = ::this.handleClickBottomButton;
     }
 
     handleClickBrand(brandName, index) {
@@ -65,26 +54,7 @@ class Brand extends Component {
         this.props.handleSetBrand(brandName);
     }
 
-    handleScrollEvent() {
-        if(this._timeout !== null) {
-            clearTimeout(this._timeout);
-        }
-
-        this._timeout = setTimeout(() => {
-            this._timeout = null;
-            this.setState({
-                isMoving: false
-            });
-        }, TYPES.CONFIG.SHOW_TIMEOUT);
-
-        if(!this.state.isMoving) {
-            this.setState({
-                isMoving: true
-            });
-        }
-    }
-
-    handleClickFixedButton() {
+    handleClickBottomButton() {
         if (this.state.selectedIndex === TYPES.CONFIG.NOT_SELECTED) {
             alert("브랜드를 선택하세요!");
         } else {
@@ -100,6 +70,11 @@ class Brand extends Component {
                     className={`${this.state.selectedIndex === index ? "active" : ""}`}>
                     <div className={"img-wrapper"}>
                         <img src={item.image}/>
+                    </div>
+                    <div className={`brand-explain ${this.state.selectedIndex === index ? "" : "hide"}`}>
+                        <span className={"label label-en"}>
+                            {item.name}
+                        </span>
                     </div>
                 </li>
             )
@@ -119,8 +94,8 @@ class Brand extends Component {
                             {brandIcons}
                         </ul>
                     </div>
-                    <div className={`fixed-button ${this.state.isMoving ? "hide" : ""}`}
-                        onClick={() => {this.handleClickFixedButton()}}>
+                    <div className={"bottom button"}
+                        onClick={() => {this.handleClickBottomButton()}}>
                         <span className={"label"}>맞는 옷 찾으러 가기</span>
                     </div>
                 </div>

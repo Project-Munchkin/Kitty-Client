@@ -30,6 +30,10 @@
 .result .oval .label-large {
     margin: 31px auto -8px;
     font-size: 100px;
+    width: 88px;
+    height: 117px;
+    line-height: 117px;
+    vertical-align: middle;
 }
 
 .result-explain {
@@ -45,8 +49,12 @@
     text-align: center;
 }
 
-.result .button button {
+.result .clear.button button {
     color: #949494;
     font-size: 12px;
     font-weight: 300;
+}
+
+.result .bottom.button {
+    margin-top: 8px;
 }

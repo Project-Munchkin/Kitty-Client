@@ -9,20 +9,16 @@ class Result extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            isMoving: false
-        };
-
-        this.handleClickButton = ::this.handleClickButton;
-        this.handleClickFixedButton = ::this.handleClickFixedButton;
+        this.handleClickClearButton = ::this.handleClickClearButton;
+        this.handleClickBottomButton = ::this.handleClickBottomButton;
     }
 
-    handleClickButton() {
+    handleClickClearButton() {
         this.props.handleClear();
         this.props.history.push("/");
     }
 
-    handleClickFixedButton() {
+    handleClickBottomButton() {
         this.props.history.push('/recommended');
     }
 
@@ -46,11 +42,11 @@ class Result extends Component {
                             사람들이 거의 같은 비율로 M과 S 사이즈를
                             구매했습니다.
                         </div>
-                        <div className={"button"} onClick={() => {this.handleClickButton()}}>
+                        <div className={"clear button"} onClick={() => {this.handleClickClearButton()}}>
                             <button>다시 시작하기</button>
                         </div>
-                        <div className={`fixed-button ${this.state.isMoving ? "hide" : ""}`}
-                             onClick={() => {this.handleClickFixedButton()}}>
+                        <div className={"bottom button"}
+                             onClick={() => {this.handleClickBottomButton()}}>
                             <span className={"label"}>맞는 옷 찾으러 가기</span>
                         </div>
                     </div>
