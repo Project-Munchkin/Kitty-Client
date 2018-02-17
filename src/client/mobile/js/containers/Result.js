@@ -9,6 +9,11 @@ class Result extends Component {
     constructor(props) {
         super(props);
 
+        this.state = {
+            "size": "M",
+            "explain": "고객님과 비슷한 키, 체중, 선호하는 핏을 가진 사람들이 거의 같은 비율로 M과 S 사이즈를 구매했습니다."
+        }
+
         this.handleClickClearButton = ::this.handleClickClearButton;
         this.handleClickBottomButton = ::this.handleClickBottomButton;
     }
@@ -34,13 +39,13 @@ class Result extends Component {
                     </div>
                     <div className={"result"}>
                         <div className={"oval"}>
-                            <span className={"label label-en label-large"}>M</span>
+                            <span className={"label label-en label-large"}>
+                                {this.state.size}
+                            </span>
                             <span className={"label label-en"}>SIZE</span>
                         </div>
                         <div className={"result-explain"}>
-                            고객님과 비슷한 키, 체중, 선호하는 핏을 가진
-                            사람들이 거의 같은 비율로 M과 S 사이즈를
-                            구매했습니다.
+                            {this.state.explain}
                         </div>
                         <div className={"clear button"} onClick={() => {this.handleClickClearButton()}}>
                             <button>다시 시작하기</button>
