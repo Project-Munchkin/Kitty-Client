@@ -1,8 +1,28 @@
-body {
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
     margin: 0;
     padding: 0;
-    border-top: 5px solid #ac1d4c;
+    font-weight: normal;
+    -webkit-text-size-adjust: none;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+body, button, input, select, table, textarea, pre {
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    appearance: none;
+    /*-webkit-appearance: none;*/
+    -webkit-tap-highlight-color: transparent;
+    -webkit-focus-ring-color: transparent;
+    -webkit-text-size-adjust: none;
+    outline: none !important;
+    color: #000;
     font-family: 'NanumSquare', 'Roboto', sans-serif;
+}
+
+body {
+    border-top: 5px solid #ac1d4c;
     overflow-x: hidden;
 }
 
@@ -93,30 +113,29 @@ img.logo {
 
 .step {
     margin: 0 auto;
+    padding: 171px 0 112px;
     height: 716px;
 }
 
 .title-box {
-    position: relative;
     text-align: center;
-    top: 171px;
 }
 
 .title-box .title {
     font-size: 21.4px;
     line-height: 1.17;
     color: #333333;
+    margin-bottom: 20px;
 }
 
 .title-box .description {
-    position: relative;
     top: 20px;
     font-weight: normal;
     font-size: 35.2px;
+    margin-bottom: 79px;
 }
 
-.title-box .sub-desc{
-    position: relative;
+.title-box .sub-desc {
     top: 13px;
     line-height: 2.75;
     font-size: 16.1px;
@@ -124,8 +143,6 @@ img.logo {
 }
 
 .selectors {
-    position: relative;
-    top: 320px;
 }
 
 .step-box {
@@ -138,10 +155,11 @@ img.logo {
 
 .selector {
     position: relative;
-    top: 57px;
+    top: 56px;
+    margin-top: 24px;
     padding-left: 140px;
     font-size: 16.2px;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .selector:last-child {
@@ -155,23 +173,18 @@ img.logo {
 
 .selector .options {
     display: inline-block;
-    margin-left: 74px;
+    margin-left: 70px;
 }
 
 .selector .options ul {
     list-style-type: none;
     color: gray;
-    font-weight: 500;
 }
 
 .selector .options ul li {
     display: inline;
-    margin-left: 68px;
+    margin-right: 68px;
     opacity: 0.25;
-}
-
-.selector .options ul li:first-child {
-    margin-left: 0;
 }
 
 .selector .options ul li.active {
@@ -180,6 +193,33 @@ img.logo {
     opacity: 1.0;
 }
 
-.selector.height {
-    margin-top: 26px;
+.selector.height .options {
+    margin-left: 49px;
+}
+
+.selector.height .point {
+    font-size: 16px;
+    color: #666666;
+}
+
+.selector.height input {
+    width: 254px;
+    height: 47px;
+    background-color: #ffffff;
+    border: solid 2px #dcdcdc;
+    color: #999999;
+    padding: 0 17px;
+}
+
+.selector.height .sub-desc {
+    position: relative;
+    left: 108px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.underline {
+    position: relative;
+    top: 715px;
+    border-bottom: solid 0.5px #dcdcdc;
 }

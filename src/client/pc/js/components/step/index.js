@@ -22,8 +22,6 @@ class Step extends Component {
             }
         };
 
-
-
         return (
             <div className={"step"}>
                 <div className={"title-box"}>
@@ -36,6 +34,10 @@ class Step extends Component {
                 <div className={"selectors"}>
                     {selector()}
                 </div>
+                <div>
+                    buttons
+                </div>
+                <div className={"underline"}></div>
             </div>
         )
     }

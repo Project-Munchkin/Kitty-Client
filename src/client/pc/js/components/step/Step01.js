@@ -29,8 +29,13 @@ class Step01 extends Component {
                                 selectCallback={this.handleSelectBodyType}/>
                 <div>
                     <div className={"selector height"}>
-                        <span className={"label"}>키(cm)</span>
-                        <input type={}/>
+                        <div>
+                            <span className={"label"}>키 <span className={"point"}>(cm)</span></span>
+                            <input className={"options"} type="Number" placeholder={"자신의 키를 적어주세요"}/>
+                        </div>
+                        <div>
+                            <span className={"sub-desc"}>* 0.5 cm는 반올림처리 됩니다.</span>
+                        </div>
                     </div>
                 </div>
             </div>
