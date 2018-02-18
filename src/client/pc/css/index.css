@@ -6,7 +6,7 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
     font-family: 'NanumSquare', sans-serif;
 }
 
-body, button, input, select, table, textarea, pre, hr{
+body, button, input, select, table, textarea, pre, hr {
     background-color: transparent;
     border: 0;
     -webkit-box-shadow: none;
@@ -155,7 +155,7 @@ img.logo {
     position: relative;
     top: 56px;
     margin-top: 24px;
-    padding-left: 140px;
+    padding-left: 122px;
     font-size: 16.2px;
     font-weight: bold;
 }
@@ -165,13 +165,14 @@ img.logo {
 }
 
 .selector .label {
-    width: 45px;
-    text-align: right;
+    width: 70px;
+    display: inline-block;
+    text-align: left;
 }
 
 .selector .options {
     display: inline-block;
-    margin-left: 70px;
+    margin-left: 35px;
 }
 
 .selector .options ul {
@@ -189,10 +190,6 @@ img.logo {
     display: inline;
     color: #ae003c;
     opacity: 1.0;
-}
-
-.selector.height .options {
-    margin-left: 49px;
 }
 
 .selector.height .point {
@@ -216,7 +213,7 @@ img.logo {
     color: #999999;
 }
 
-.step-buttons{
+.step-buttons {
     text-align: center;
 }
 
@@ -224,4 +221,12 @@ img.logo {
     width: 80%;
     margin-top: 112px;
     border-bottom: solid 0.5px #dcdcdc;
+}
+
+.step02 {
+    height: 220px;
+}
+
+.step02 .selector .label {
+    width: 110px;
 }

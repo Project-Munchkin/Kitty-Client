@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-import ButtonSelector from './ButtonSelector'
+import ButtonSelector from "./ButtonSelector";
 import types from "../../../../pc/js/types";
 
 class Step01 extends Component {
