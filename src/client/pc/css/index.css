@@ -234,3 +234,8 @@ img.logo {
 .step-buttons span {
     margin: 0 10px;
 }
+
+.footer {
+    height: 313px;
+    background-color: #515151;
+}

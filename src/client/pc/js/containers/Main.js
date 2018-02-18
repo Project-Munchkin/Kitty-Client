@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import Navigator from "../components/navigator";
 import Banner from "../components/banner";
 import Step from "../components/step";
+import Footer from "../components/footer";
 
 class Main extends Component {
 
@@ -20,6 +21,7 @@ class Main extends Component {
                     <Step index={3} description={"어떤 종류의 옷을 찾으시나요?"} subDesc={"찾으시는 옷의 종류를 선택해주세요:)"}/>
                     <Step index={4} description={"마지막 단계에요!\n" + "어떤 브랜드를 선호하시나요?"}/>
                 </div>
+                <Footer/>
             </div>
         );
     }
