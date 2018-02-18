@@ -22,15 +22,16 @@ body, button, input, select, table, textarea, pre, hr {
 }
 
 body {
+}
+
+.container {
     border-top: 5px solid #ac1d4c;
-    overflow-x: hidden;
+    min-width: 1280px;
 }
 
 .topNav {
+    position: relative;
     height: 80px;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
 }
 
 a, a:hover, a:visited {
@@ -39,21 +40,19 @@ a, a:hover, a:visited {
 }
 
 img.logo {
-    height: 26px;
-    margin: 0;
-    margin-left: 370px;
-    margin-right: 675px;
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
+    position: absolute;
+    top: 26px;
+    left: 370px;
 }
 
+.topNav nav {
+    position: absolute;
+    top: 33px;
+    right: 100px;
+}
 .topNav nav ul {
     height: 16px;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 750px;
 }
 
 .topNav li {
@@ -115,6 +114,10 @@ img.logo {
     margin: 0 auto;
     padding-top: 171px;
     box-sizing: border-box;
+}
+
+.step:last-child {
+    padding-bottom: 150px;
 }
 
 .title-box {
