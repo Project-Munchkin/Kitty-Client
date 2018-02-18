@@ -34,10 +34,6 @@ class Step extends Component {
                 <div className={"selectors"}>
                     {selector()}
                 </div>
-                <div className={"step-buttons"}>
-                    <span>다음으로</span>
-                </div>
-                <hr className={"underline"}/>
             </div>
         )
     }

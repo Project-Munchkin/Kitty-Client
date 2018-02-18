@@ -8,8 +8,15 @@ class Step04 extends Component {
 
     render() {
         return (
-            <div className={"step-box"}>
-                step 04
+            <div>
+                <div className={"step-box"}>
+                    <div>
+                        step 04
+                    </div>
+                </div>
+                <div className={"step-buttons"}>
+                    <span><a href="#">이전 단계로</a></span>
+                </div>
             </div>
         )
     }

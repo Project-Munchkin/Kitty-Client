@@ -230,3 +230,7 @@ img.logo {
 .step02 .selector .label {
     width: 110px;
 }
+
+.step-buttons span {
+    margin: 0 10px;
+}
