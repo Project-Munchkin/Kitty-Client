@@ -234,6 +234,106 @@ img.logo {
     width: 110px;
 }
 
+.image-selector {
+
+}
+
+.step03 {
+    margin: 81px auto 32px;
+    width: 780px;
+    height: 433px;
+}
+
+.step03 .image-selector:first-child {
+    margin-bottom: 25px;
+}
+
+.step03 .image-selector > .label-box span {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.step03 .image-selector > .label-box .label {
+    color: #333333;
+}
+
+.step03 .image-selector > .label-box .label-en {
+    color: #666666;
+    font-weight: 300;
+}
+
+.step03 .image-selector .options {
+    display: inline-block;
+}
+
+.step03 .image-selector .options ul {
+    list-style-type: none;
+    margin-top: 8px;
+}
+
+.step03 .image-selector .options ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.step03 .image-selector .options ul li.active .summary {
+    display: none;
+}
+
+.step03 .image-selector .options ul li:last-child {
+    margin-right: 0;
+}
+
+.step03 .image-selector .clothes {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    /* 76 / 85 */
+}
+
+.step03 .image-selector .clothes.summary {
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.step03 .image-selector .clothes.summary .img-wrapper {
+    margin: 32px auto 0;
+    width: 76px;
+    height: 80px;
+}
+
+.step03 .image-selector .clothes.summary > .label-box {
+    margin-top: 20px;
+}
+
+.step03 .image-selector .clothes.summary > .label-box span {
+    display: block;
+}
+
+.step03 .image-selector .clothes.summary > .label-box .label {
+    font-size: 16px;
+    color: #666666;
+}
+
+.step03 .image-selector .clothes.summary > .label-box .label-en {
+    font-size: 11px;
+    color: #999999;
+    font-weight: 300;
+}
+
+.step03 .image-selector .clothes.check {
+    opacity: 0.95;
+    background-color: #ac1d4c;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.step03 .image-selector .clothes.check .checkmark {
+    margin: 37px auto 37px;
+}
+
 .step-buttons span {
     margin: 0 10px;
 }
@@ -241,4 +341,41 @@ img.logo {
 .footer {
     height: 313px;
     background-color: #515151;
+}
+
+.label-en {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+.img-wrapper {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.img-wrapper img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.checkmark {
+    display: inline-block;
+}
+.checkmark:after {
+    content: '';
+    display: block;
+    width: 37px;
+    height: 50px;
+    border: solid #ffffff;
+    border-width: 0 10px 8px 0;
+    transform: matrix(0.586,0.7,-0.8,0.866,0,0);
 }
