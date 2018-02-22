@@ -289,7 +289,6 @@ img.logo {
     width: 180px;
     height: 180px;
     border-radius: 8px;
-    /* 76 / 85 */
 }
 
 .step03 .image-selector .clothes.summary {
@@ -298,6 +297,7 @@ img.logo {
 }
 
 .step03 .image-selector .clothes.summary .img-wrapper {
+    display: inline-block;
     margin: 32px auto 0;
     width: 76px;
     height: 80px;
@@ -338,6 +338,71 @@ img.logo {
     margin: 0 10px;
 }
 
+.step04 {
+    margin: 102px auto 57px;
+    width: 779px;
+    height: 129px;
+}
+
+.step04 .image-selector .options {
+    display: inline-block;
+}
+
+.step04 .image-selector .options ul {
+    list-style-type: none;
+}
+
+.step04 .image-selector .options ul li {
+    float: left;
+    margin-right: 9px;
+}
+
+.step04 .image-selector .options ul li:last-child {
+    margin-right: 0;
+}
+
+.step04 .image-selector .options ul li .brand.summary .checkmark {
+    display: none;
+}
+
+.step04 .image-selector .options ul li.active .brand.check .img-wrapper {
+    display: none;
+}
+
+.step04 .image-selector .options ul li.active .brand.check .checkmark {
+    margin-top: 10px;
+}
+
+.step04 .image-selector .brand {
+    width: 188px;
+    height: 106px;
+}
+
+.step04 .image-selector .brand.summary {
+    border: solid 1px #dcdcdc;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.step04 .image-selector .brand.summary .img-wrapper {
+    margin: 26px auto 0;
+    height: 55px;
+}
+
+.step04 .image-selector .brand.check {
+    background-color: #ac1d4c;
+    opacity: 0.95;
+    text-align: center;
+}
+
+
+.step04 .image-selector .labels {
+    margin: 10px 0 0;
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+}
+
 .footer {
     height: 313px;
     background-color: #515151;
@@ -352,7 +417,6 @@ img.logo {
 }
 
 .img-wrapper {
-    display: inline-block;
     position: relative;
     overflow: hidden;
     margin: 0 auto;
