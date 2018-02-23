@@ -61,3 +61,10 @@ export function setInitialState() {
         type: ACTION_TYPES.SET_INITIAL
     }
 }
+
+export function setResult(result) {
+    return {
+        type: ACTION_TYPES.SET_RESULT,
+        result
+    }
+}

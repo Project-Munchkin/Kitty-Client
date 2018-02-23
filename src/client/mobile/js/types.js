@@ -6,28 +6,28 @@ export default {
     },
     USER: {
         GENDER: {
-            MAN: 'man',
-            WOMAN: 'woman'
+            MAN: 1,
+            WOMAN: 2
         },
         BODY_TYPE: {
-            NORMAL: 'normal',
-            SLIM: 'slim',
-            CHUBBY: 'chubby'
+            NORMAL: 1,
+            SLIM: 2,
+            CHUBBY: 3
         },
         SHOULDER: {
-            NORMAL: 'normal',
-            NARROW: 'narrow',
-            WIDE: 'wide'
+            NORMAL: 1,
+            NARROW: 2,
+            WIDE: 3
         },
         ARM: {
-            NORMAL: 'normal',
-            SHORT: 'short',
-            LONG: 'long'
+            NORMAL: 1,
+            SHORT: 2,
+            LONG: 3
         },
         LEG: {
-            NORMAL: 'normal',
-            SHORT: 'short',
-            LONG: 'long'
+            NORMAL: 1,
+            SHORT: 2,
+            LONG: 3
         }
     },
     CONFIG: {

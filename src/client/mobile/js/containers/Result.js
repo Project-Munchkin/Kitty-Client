@@ -10,9 +10,9 @@ class Result extends Component {
         super(props);
 
         this.state = {
-            "size": "M",
-            "explain": "고객님과 비슷한 키, 체중, 선호하는 핏을 가진 사람들이 거의 같은 비율로 M과 S 사이즈를 구매했습니다."
-        }
+            "size": this.props.size,
+            "explain": `고객님과 비슷한 키, 체중의 핏을 가진 사람들은 거의 같은 비율로 ${this.props.size}사이즈를 선호합니다.`
+        };
 
         this.handleClickClearButton = ::this.handleClickClearButton;
         this.handleClickBottomButton = ::this.handleClickBottomButton;
@@ -63,8 +63,7 @@ class Result extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        app: state.app,
-        user: state.user
+        size: state.result.size
     }
 };
 

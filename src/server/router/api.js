@@ -1,17 +1,30 @@
 import express from "express";
 import axios from "axios";
+
 const router = express.Router();
 
-const url = ''; // 여기에 서버 url을 넣으면 됌.
+const url = 'http://dpm-munchkin.herokuapp.com/products/match';
+// const url = 'http://localhost:8080/products/match';
 
 router.post('/result', (req, res, next) => {
 
-    axios.post(url).then((response)=>{
+    const data = {
+        arm: req.body.arm,
+        bodyType: req.body.bodyType,
+        brandName: req.body.brand,
+        category: req.body.clothesType === null ? 5 : req.body.clothesType,
+        gender: req.body.gender,
+        height: req.body.height,
+        shoulder: req.body.shoulder
+    };
+
+    axios.post(url, data).then((response) => {
         res.json({
             status: 200,
-            result: response.data
+            result: response.data.data
         });
     });
+
 });
 
 export default router;

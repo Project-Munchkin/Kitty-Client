@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-
+import axios from "axios"
 import Header from "../components/header";
 import {connect} from "react-redux";
 import {withRouter} from "react-router-dom";
@@ -14,30 +14,21 @@ class Brand extends Component {
         this.state = {
             brandList: [
                 {
-                    name: '유니클로',
+                    name: 'uniqlo',
                     image: '../img/brand/uniqlo.png'
                 },
                 {
-                    name: '지오다노',
+                    name: 'giordano',
                     image: '../img/brand/giordano.png'
                 },
                 {
-                    name: 'SPAO',
+                    name: 'spao',
                     image: '../img/brand/spao.png'
                 },
                 {
-                    name: 'H&M',
+                    name: 'h&m',
                     image: '../img/brand/h&m.png'
-                },
-                {
-                    name: 'ZARA',
-                    image: '../img/brand/zara.png'
-                },
-                {
-                    name: 'ZARA2',
-                    image: '../img/brand/zara.png'
                 }
-
             ],
             selectedIndex: TYPES.CONFIG.NOT_SELECTED
         };
@@ -57,9 +48,19 @@ class Brand extends Component {
     handleClickBottomButton() {
         if (this.state.selectedIndex === TYPES.CONFIG.NOT_SELECTED) {
             alert("브랜드를 선택하세요!");
-        } else {
-            this.props.history.push('/result');
+            return;
         }
+
+        axios.post('/api/v1/result', this.props.data)
+            .then((response) => {
+                const result = response.data.result;
+                this.props.handleSetResult(result);
+                this.props.history.push('/result');
+            })
+            .catch((reason) => {
+                console.log(reason);
+                alert("오류가 발생했습니다.");
+            });
     }
 
     render() {
@@ -104,13 +105,21 @@ class Brand extends Component {
     }
 }
 
+const mapStateToProps = (state) => {
+    return {
+        data: Object.assign(state.app, state.user)
+    };
+};
 
 const mapDispatchToProps = (dispatch) => {
     return {
         handleSetBrand: (brand) => {
             dispatch(actions.setBrand(brand));
+        },
+        handleSetResult: (result) => {
+            dispatch(actions.setResult(result));
         }
     }
 };
 
-export default withRouter(connect(undefined, mapDispatchToProps)(Brand));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Brand));
