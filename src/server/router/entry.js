@@ -8,10 +8,10 @@ router.get('/', (req, res, next)=>{
 
     res.type('.html');
     if(md.mobile()){
-        res.redirect('/static/mobile/html/index_origin.html');
+        res.redirect('/static/mobile/html/index.html');
     }
     else {
-        res.redirect('/static/pc/html/index_origin.html');
+        res.redirect('/static/pc/html/index.html');
     }
 });
 
