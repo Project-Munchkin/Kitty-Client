@@ -11,20 +11,20 @@ class Step03 extends Component {
                 {
                     gender: types.USER.GENDER.MAN,
                     options: [
-                        {name: '자켓/코트', nameEn: 'Jaket/Coat', src: '../../img/mid/icon_menjk.png'},
-                        {name: '맨투맨/티셔츠', nameEn: 'MenToMen/T-Shirt', src: '../../img/mid/icon_menmtm.png'},
-                        {name: '셔츠', nameEn: 'Shirt', src: '../../img/mid/icon_menshirt.png'},
-                        {name: '청바지/슬랙스', nameEn: 'Pants', src: '../../img/mid/icon_menpants.png'}
+                        {name: '자켓/코트', nameEn: 'Jaket/Coat', src: '../img/mid/icon_menjk.png'},
+                        {name: '맨투맨/티셔츠', nameEn: 'MenToMen/T-Shirt', src: '../img/mid/icon_menmtm.png'},
+                        {name: '셔츠', nameEn: 'Shirt', src: '../img/mid/icon_menshirt.png'},
+                        {name: '청바지/슬랙스', nameEn: 'Pants', src: '../img/mid/icon_menpants.png'}
                     ],
                     selectedIndex: -1
                 },
                 {
                     gender: types.USER.GENDER.WOMAN,
                     options: [
-                        {name: '아우터', nameEn: 'Outwear', src: '../../img/mid/icon_wjk.png'},
-                        {name: '원피스', nameEn: 'Onepiece', src: '../../img/mid/icon_wonepiece.png'},
-                        {name: '상의', nameEn: 'Top', src: '../../img/mid/icon_wtop.png'},
-                        {name: '치마/바지', nameEn: 'Pants', src: '../../img/mid/icon_wpants.png'}
+                        {name: '아우터', nameEn: 'Outwear', src: '../img/mid/icon_wjk.png'},
+                        {name: '원피스', nameEn: 'Onepiece', src: '../img/mid/icon_wonepiece.png'},
+                        {name: '상의', nameEn: 'Top', src: '../img/mid/icon_wtop.png'},
+                        {name: '치마/바지', nameEn: 'Pants', src: '../img/mid/icon_wpants.png'}
                     ],
                     selectedIndex: -1
                 }

@@ -7,10 +7,10 @@ class Step04 extends Component {
 
         this.state = {
             brands : [
-                { name: "유니클로", src: "../../img/mid/logo_uniq.png" },
-                { name: "지오다노", src: "../../img/mid/logo_godn.png" },
-                { name: "스파오", src: "../../img/mid/icon_spao.png" },
-                { name: "에잇세컨즈", src: "../../img/mid/icon_zara.png" }
+                { name: "유니클로", src: "../img/mid/logo_uniq.png" },
+                { name: "지오다노", src: "../img/mid/logo_godn.png" },
+                { name: "스파오", src: "../img/mid/icon_spao.png" },
+                { name: "에잇세컨즈", src: "../img/mid/icon_zara.png" }
             ],
             selectedIndex: -1
         };
