@@ -6,8 +6,8 @@ export default {
     },
     USER: {
         GENDER: {
-            MAN: 'man',
-            WOMAN: 'woman'
+            MAN: 1,
+            WOMAN: 2
         },
         BODY_TYPE: {
             NORMAL: 'normal',

@@ -3,8 +3,8 @@ import axios from "axios";
 
 const router = express.Router();
 
-const url = 'http://dpm-munchkin.herokuapp.com/products/match';
-// const url = 'http://localhost:8080/products/match';
+// const url = 'http://dpm-munchkin.herokuapp.com/products/match';
+const url = 'http://172.20.10.2/products/match';
 
 router.post('/result', (req, res, next) => {
 

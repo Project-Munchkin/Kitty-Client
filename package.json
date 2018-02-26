@@ -44,6 +44,7 @@
     "dev:server": "cross-env NODE_ENV=development nodemon --exec babel-node src/server/express.js",
     "build:mobile": "webpack --config ./configs/webpack.config.mobile.js",
     "build:pc": "webpack --config ./configs/webpack.config.pc.js",
-    "build": "npm run build:mobile & npm run build:pc"
+    "build": "npm run build:mobile & npm run build:pc",
+    "production": "npm run build & babel-node ./src/server/index.js"
   }
 }

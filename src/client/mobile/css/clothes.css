@@ -12,16 +12,61 @@
 .clothes ul {
     display: inline-block;
     list-style-type: none;
+    margin: 79px 0 20px;
 }
 
 .clothes ul li {
     float: left;
     display: inline;
-    margin-top: 42px;
+    margin-bottom: 23px;
+    margin-right: 23px;
 }
 
-.clothes ul li:nth-child(3n) {
+.clothes ul li:nth-child(2n) {
     margin-right: 0;
 }
 
+.clothes ul li .summary {
+    width: 128px;
+    height: 128px;
+    border-radius: 23px;
+    border: solid 3px #eeeeee;
+    box-sizing: border-box;
+    text-align: center;
+}
 
+.clothes ul li .summary .img-wrapper {
+    height: 65px;
+    margin: 15px auto 10px;
+}
+
+.clothes ul li .img-wrapper img {
+    height: 65px;
+}
+
+.clothes ul li .label-wrapper {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.clothes ul li .label-wrapper span {
+    display: block;
+    font-size: 9.6px;
+}
+
+.clothes ul li .label-wrapper .label {
+    font-size: 12px;
+}
+
+.clothes ul li.active .summary {
+    background-color: #ac1e4c;
+    border: solid 3px #ac1e4c;
+}
+
+.clothes ul li.active .img-wrapper img {
+    filter: brightness(200%);
+}
+
+.clothes ul li.active .label-wrapper {
+    color: #ffffff;
+}

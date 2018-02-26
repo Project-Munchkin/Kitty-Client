@@ -4,54 +4,77 @@ import Header from "../components/header";
 import {connect} from "react-redux";
 import {withRouter} from "react-router-dom";
 import * as actions from "../store/actions";
+import types from "../../../pc/js/types";
+import BottomButton from "../components/buttons/BottomButton";
 
 class Clothes extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            clothesList: [
-                {
-                    type: '상의',
-                    image: '../../img/clothes/1.jpg'
-                },
-                {
-                    type: '슬렉스',
-                    image: '../../img/clothes/2.jpg'
-                },
-                {
-                    type: '코트',
-                    image: '../../img/clothes/3.jpg'
-                },
-                {
-                    type: '상의',
-                    image: '../../img/clothes/4.jpg'
-                }
 
-            ]
+        this.state = {
+            clothes: [
+                {
+                    gender: types.USER.GENDER.MAN,
+                    options: [
+                        {name: '자켓/코트', nameEn: 'Jaket/Coat', src: '../img/clothes/icon_menjk.png'},
+                        {name: '맨투맨/티셔츠', nameEn: 'MenToMen/T-Shirt', src: '../img/clothes/icon_menmtm.png'},
+                        {name: '셔츠', nameEn: 'Shirt', src: '../img/clothes/icon_menshirt.png'},
+                        {name: '청바지/슬랙스', nameEn: 'Pants', src: '../img/clothes/icon_menpants.png'}
+                    ]
+                },
+                {
+                    gender: types.USER.GENDER.WOMAN,
+                    options: [
+                        {name: '아우터', nameEn: 'Outwear', src: '../img/clothes/icon_wjk.png'},
+                        {name: '원피스', nameEn: 'Onepiece', src: '../img/clothes/icon_wonepiece.png'},
+                        {name: '상의', nameEn: 'Top', src: '../img/clothes/icon_wtop.png'},
+                        {name: '치마/바지', nameEn: 'Pants', src: '../img/clothes/icon_wpants.png'}
+                    ]
+                }
+            ],
+            selectedIndex: -1
         };
 
         this.handleClickClothes = ::this.handleClickClothes;
+        this.handleClickButtonNext = ::this.handleClickButtonNext;
     }
 
-    handleClickClothes(clothesType){
+    handleClickClothes(clothesType, index) {
+        this.setState({
+            selectedIndex: index
+        });
+
         this.props.handleSetClothesType(clothesType);
-        this.props.history.push('/result');
+    }
+
+    handleClickButtonNext(){
+        this.props.history.push('/brand');
+    }
+
+    _renderClothesOptionsByGender(gender) {
+        const clothesByGender = this.state.clothes.filter((value) => value.gender === gender)[0];
+        return clothesByGender.options
+            .map((option, index) => {
+                return (
+                    <li key={index} className={`${this.state.selectedIndex === index ? "active" : ""}`}
+                        onClick={()=>{this.handleClickClothes(option.name, index)}}>
+                        <div className={"summary"}>
+                            <div className={"img-wrapper"}>
+                                <img src={option.src}/>
+                            </div>
+                            <div className={"label-wrapper"}>
+                                <span className={"label"}>{option.name}</span>
+                                <span className={"label-en"}>{option.nameEn}</span>
+                            </div>
+                        </div>
+                    </li>)
+            });
     }
 
     render() {
 
-        const clothesIcons = this.state.clothesList.map((item, index) => {
-            return (
-                <li key={index} onClick={()=>{this.handleClickClothes(item.type)}}>
-                    <div className={"img-wrapper"}>
-                        <img src={item.image}/>
-                    </div>
-                    <div className={"label-wrapper"}>
-                        <span>{item.type}</span>
-                    </div>
-                </li>)
-        });
+        const clothesIcons = this._renderClothesOptionsByGender(this.props.gender);
 
         return (
             <div>
@@ -65,11 +88,18 @@ class Clothes extends Component {
                     <div className={"clothes"}>
                         <ul>{clothesIcons}</ul>
                     </div>
+                    <BottomButton name={'다음으로 >>'} onClickListener={this.handleClickButtonNext} />
                 </div>
             </div>
         );
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        gender: state.user.gender
+    }
+};
 
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -79,5 +109,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-
-export default withRouter(connect(undefined, mapDispatchToProps)(Clothes));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Clothes));

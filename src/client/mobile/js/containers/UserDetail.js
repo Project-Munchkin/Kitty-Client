@@ -39,7 +39,7 @@ class User extends Component {
     }
 
     handleClickButtonNext(){
-        this.props.history.push('/brand');
+        this.props.history.push('/clothes');
     }
 
     render() {
