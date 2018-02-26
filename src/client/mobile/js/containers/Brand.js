@@ -74,7 +74,7 @@ class Brand extends Component {
                     </div>
                     <div className={`brand-explain ${this.state.selectedIndex === index ? "" : "hide"}`}>
                         <span className={"label label-en"}>
-                            {item.name}
+                            {item.name.toUpperCase()}
                         </span>
                     </div>
                 </li>
