@@ -6,6 +6,7 @@ import {withRouter} from "react-router-dom";
 import * as actions from "../store/actions";
 import types from "../../../pc/js/types";
 import BottomButton from "../components/buttons/BottomButton";
+import TYPES from "../types";
 
 class Clothes extends Component {
 
@@ -48,7 +49,12 @@ class Clothes extends Component {
         this.props.handleSetClothesType(clothesType);
     }
 
-    handleClickButtonNext(){
+    handleClickButtonNext() {
+        if (this.state.selectedIndex === TYPES.CONFIG.NOT_SELECTED) {
+            alert("종류를 선택하세요!");
+            return;
+        }
+
         this.props.history.push('/brand');
     }
 
@@ -58,7 +64,9 @@ class Clothes extends Component {
             .map((option, index) => {
                 return (
                     <li key={index} className={`${this.state.selectedIndex === index ? "active" : ""}`}
-                        onClick={()=>{this.handleClickClothes(option.name, index)}}>
+                        onClick={() => {
+                            this.handleClickClothes(option.name, index)
+                        }}>
                         <div className={"summary"}>
                             <div className={"img-wrapper"}>
                                 <img src={option.src}/>
@@ -88,7 +96,7 @@ class Clothes extends Component {
                     <div className={"clothes"}>
                         <ul>{clothesIcons}</ul>
                     </div>
-                    <BottomButton name={'다음으로 >>'} onClickListener={this.handleClickButtonNext} />
+                    <BottomButton name={'다음으로 >>'} onClickListener={this.handleClickButtonNext}/>
                 </div>
             </div>
         );
